@@ -1,0 +1,8 @@
+[
+  { "slug": "writing", "name": "写作文案", "icon": "✍️", "description": "小红书、博客、邮件、小说等各类写作提示词" },
+  { "slug": "coding", "name": "编程开发", "icon": "💻", "description": "代码调试、Review、正则、架构设计等编程提示词" },
+  { "slug": "art", "name": "AI绘画", "icon": "🎨", "description": "Midjourney、Stable Diffusion、DALL-E等绘画提示词" },
+  { "slug": "work", "name": "办公效率", "icon": "📊", "description": "会议纪要、PPT、Excel、邮件等办公场景提示词" },
+  { "slug": "learning", "name": "学习教育", "icon": "📚", "description": "翻译、解释概念、论文辅助等学习提示词" },
+  { "slug": "business", "name": "商业营销", "icon": "💰", "description": "商业分析、广告文案、营销策略等商业提示词" }
+]
