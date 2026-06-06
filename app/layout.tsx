@@ -29,9 +29,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div style={{ width: 32, height: 32, borderRadius: 8, background: "linear-gradient(135deg, #6366f1, #8b5cf6)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: 800, fontSize: 14 }}>P</div>
               <span style={{ fontSize: "1.15rem", fontWeight: 700, color: "#1e293b" }}>PromptHub</span>
             </Link>
-            <nav style={{ display: "flex", gap: 4 }}>
+            <nav style={{ display: "flex", gap: 4, alignItems: "center" }}>
               <Link href="/" style={{ padding: "8px 16px", borderRadius: 8, fontSize: "0.9rem", color: "#64748b", textDecoration: "none" }}>首页</Link>
               <Link href="/search" style={{ padding: "8px 16px", borderRadius: 8, fontSize: "0.9rem", color: "#64748b", textDecoration: "none" }}>搜索</Link>
+              <Link href="/en" style={{ padding: "6px 12px", borderRadius: 6, fontSize: "0.8rem", color: "#6366f1", border: "1px solid #6366f1", textDecoration: "none" }}>EN</Link>
             </nav>
           </div>
         </header>

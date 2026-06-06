@@ -7,7 +7,14 @@
     "content": "你是一位资深小红书文案策划师。请根据我提供的主题「{topic}」，撰写一篇小红书风格的种草文案。\n\n要求：\n1. 标题用emoji开头，包含数字或悬念\n2. 正文分3-5个要点，每点用emoji标注\n3. 语气亲切、口语化，像朋友聊天\n4. 结尾加3-5个相关话题标签\n5. 总字数300-500字",
     "tags": ["小红书", "文案", "种草", "社交媒体"],
     "useCase": "快速生成小红书种草笔记，适合电商运营、自媒体博主",
-    "example": "输入：主题「防晒霜推荐」→ 输出完整的小红书种草文案"
+    "example": "输入：主题「防晒霜推荐」→ 输出完整的小红书种草文案",
+    "en": {
+      "title": "Xiaohongshu Viral Post Generator",
+      "content": "You are a senior Xiaohongshu (RED) content strategist. Write a product recommendation post about \"{topic}\" in Xiaohongshu style.\n\nRequirements:\n1. Title starts with emoji, includes numbers or suspense\n2. Body has 3-5 key points, each marked with emoji\n3. Tone is friendly and conversational\n4. End with 3-5 relevant hashtags\n5. Total 300-500 Chinese characters",
+      "tags": ["Xiaohongshu", "Copywriting", "Social Media", "RED"],
+      "useCase": "Quickly generate Xiaohongshu product posts for e-commerce and content creators",
+      "example": "Input: topic \"Sunscreen recommendations\" → Full Xiaohongshu post"
+    }
   },
   {
     "id": "writing-email",
@@ -17,7 +24,14 @@
     "content": "你是一位专业的商务沟通顾问。请帮我撰写一封商务邮件。\n\n目的：{purpose}\n收件人：{recipient}\n关键信息：{key_points}\n\n要求：\n1. 语气专业、礼貌\n2. 结构清晰：开头问候→正文要点→结尾行动项\n3. 中英文均可，根据场景选择\n4. 控制在200字以内",
     "tags": ["邮件", "商务", "职场", "沟通"],
     "useCase": "快速撰写各类商务邮件，节省沟通时间",
-    "example": "输入：目的「催促客户确认合同」→ 输出得体的催促邮件"
+    "example": "输入：目的「催促客户确认合同」→ 输出得体的催促邮件",
+    "en": {
+      "title": "Business Email Writer",
+      "content": "You are a professional business communication consultant. Help me write a business email.\n\nPurpose: {purpose}\nRecipient: {recipient}\nKey points: {key_points}\n\nRequirements:\n1. Professional and polite tone\n2. Clear structure: greeting → body → call to action\n3. Keep under 150 words\n4. Adapt formality level to the context",
+      "tags": ["Email", "Business", "Professional", "Communication"],
+      "useCase": "Quickly draft professional business emails for any occasion",
+      "example": "Input: purpose \"Follow up on contract\" → Polite follow-up email"
+    }
   },
   {
     "id": "writing-blog",
@@ -27,7 +41,14 @@
     "content": "你是一位资深SEO内容策略师。请根据关键词「{keyword}」撰写一篇SEO优化的博客文章。\n\n要求：\n1. 标题包含关键词，吸引点击\n2. H2/H3层级结构清晰\n3. 自然融入关键词，密度2-3%\n4. 包含内链建议位置\n5. 1500-2500字\n6. 开头100字内出现核心关键词\n7. 结尾加FAQ部分（3-5个常见问题）",
     "tags": ["SEO", "博客", "内容营销", "写作"],
     "useCase": "生成搜索引擎友好的长文章，适合独立站、企业博客",
-    "example": "输入：关键词「最好的AI写作工具」→ 输出完整SEO文章"
+    "example": "输入：关键词「最好的AI写作工具」→ 输出完整SEO文章",
+    "en": {
+      "title": "SEO Blog Post Generator",
+      "content": "You are a senior SEO content strategist. Write an SEO-optimized blog post for the keyword \"{keyword}\".\n\nRequirements:\n1. Title includes the keyword and is click-worthy\n2. Clear H2/H3 heading hierarchy\n3. Natural keyword density of 2-3%\n4. Suggest internal linking opportunities\n5. 1500-2500 words\n6. Include the primary keyword in the first 100 words\n7. End with an FAQ section (3-5 questions)",
+      "tags": ["SEO", "Blog", "Content Marketing", "Writing"],
+      "useCase": "Generate search-engine-friendly long-form articles for blogs and websites",
+      "example": "Input: keyword \"best AI writing tools\" → Full SEO blog post"
+    }
   },
   {
     "id": "coding-debug",
@@ -37,7 +58,14 @@
     "content": "你是一位高级软件工程师，擅长调试和修复代码问题。\n\n请分析以下代码中的bug：\n\n```{language}\n{code}\n```\n\n错误信息：{error}\n\n请：\n1. 指出bug的具体位置\n2. 解释产生bug的原因\n3. 提供修复后的完整代码\n4. 建议如何避免类似问题",
     "tags": ["编程", "调试", "Bug修复", "代码"],
     "useCase": "快速定位和修复代码bug，适合日常开发",
-    "example": "贴入报错代码 → 得到修复方案和解释"
+    "example": "贴入报错代码 → 得到修复方案和解释",
+    "en": {
+      "title": "Code Bug Debugger",
+      "content": "You are a senior software engineer skilled at debugging code issues.\n\nAnalyze the bug in the following code:\n\n```{language}\n{code}\n```\n\nError message: {error}\n\nPlease:\n1. Identify the exact location of the bug\n2. Explain the root cause\n3. Provide the fixed code\n4. Suggest how to prevent similar issues",
+      "tags": ["Debugging", "Coding", "Bug Fix", "Programming"],
+      "useCase": "Quickly identify and fix code bugs during development",
+      "example": "Paste buggy code → Get fix with explanation"
+    }
   },
   {
     "id": "coding-review",
@@ -47,7 +75,14 @@
     "content": "你是一位资深代码审查员。请审查以下代码：\n\n```{language}\n{code}\n```\n\n从以下维度评审：\n1. **代码质量**：命名规范、可读性、复杂度\n2. **性能**：有无性能隐患\n3. **安全**：有无安全漏洞\n4. **最佳实践**：是否符合行业最佳实践\n5. **建议**：具体的改进方案\n\n用表格形式输出评审结果，每项给评分(1-5)和建议。",
     "tags": ["代码审查", "Code Review", "编程质量", "最佳实践"],
     "useCase": "提交PR前自查代码质量，提升代码水平",
-    "example": "贴入函数代码 → 得到详细审查报告"
+    "example": "贴入函数代码 → 得到详细审查报告",
+    "en": {
+      "title": "Code Review Expert",
+      "content": "You are a senior code reviewer. Review the following code:\n\n```{language}\n{code}\n```\n\nEvaluate from these dimensions:\n1. **Code Quality**: naming, readability, complexity\n2. **Performance**: any performance issues\n3. **Security**: any vulnerabilities\n4. **Best Practices**: industry standards compliance\n5. **Suggestions**: concrete improvements\n\nOutput as a table with scores (1-5) and recommendations for each.",
+      "tags": ["Code Review", "Quality", "Best Practices", "Programming"],
+      "useCase": "Self-review code quality before submitting PRs",
+      "example": "Paste function code → Get detailed review report"
+    }
   },
   {
     "id": "coding-regex",
@@ -57,7 +92,14 @@
     "content": "你是正则表达式专家。请根据我的需求生成正则表达式。\n\n需求：{description}\n\n请提供：\n1. 正则表达式\n2. 逐段解释每个部分的含义\n3. 匹配和不匹配的示例各3个\n4. JavaScript和Python两种语言的使用示例",
     "tags": ["正则表达式", "Regex", "编程", "文本处理"],
     "useCase": "快速生成和理解正则表达式",
-    "example": "输入：匹配中国手机号 → 得到正则+解释+示例"
+    "example": "输入：匹配中国手机号 → 得到正则+解释+示例",
+    "en": {
+      "title": "Regex Generator",
+      "content": "You are a regex expert. Generate a regular expression based on my requirements.\n\nRequirement: {description}\n\nProvide:\n1. The regex pattern\n2. Explanation of each part\n3. 3 matching and 3 non-matching examples\n4. Usage examples in both JavaScript and Python",
+      "tags": ["Regex", "Regular Expression", "Programming", "Text Processing"],
+      "useCase": "Quickly generate and understand regular expressions",
+      "example": "Input: \"match US phone numbers\" → Regex + explanation + examples"
+    }
   },
   {
     "id": "art-midjourney",
@@ -67,7 +109,14 @@
     "content": "请根据我的描述生成Midjourney提示词。\n\n描述：{description}\n\n要求：\n1. 英文输出\n2. 包含主体、风格、光线、构图参数\n3. 添加 --ar（宽高比）、--v（版本）、--s（风格化）参数\n4. 提供3个不同风格的变体\n5. 每个变体附带中文解释",
     "tags": ["Midjourney", "AI绘画", "提示词", "图像生成"],
     "useCase": "快速生成高质量Midjourney提示词",
-    "example": "输入：「赛博朋克风格的城市夜景」→ 3组MJ提示词"
+    "example": "输入：「赛博朋克风格的城市夜景」→ 3组MJ提示词",
+    "en": {
+      "title": "Midjourney Prompt Generator",
+      "content": "Generate Midjourney prompts based on my description.\n\nDescription: {description}\n\nRequirements:\n1. Output in English\n2. Include subject, style, lighting, composition\n3. Add --ar (aspect ratio), --v (version), --s (stylize) parameters\n4. Provide 3 different style variations\n5. Explain each variation",
+      "tags": ["Midjourney", "AI Art", "Prompt Engineering", "Image Generation"],
+      "useCase": "Quickly generate high-quality Midjourney prompts",
+      "example": "Input: \"cyberpunk city nightscape\" → 3 MJ prompt variations"
+    }
   },
   {
     "id": "art-stablediffusion",
@@ -77,7 +126,14 @@
     "content": "请为Stable Diffusion生成提示词。\n\n主题：{theme}\n风格：{style}\n\n请提供：\n1. **正向提示词**（英文，用逗号分隔）\n2. **反向提示词**（英文，排除不想要的元素）\n3. **推荐参数**：采样方法、步数、CFG值、种子\n4. 中文解释每个关键词的作用",
     "tags": ["Stable Diffusion", "AI绘画", "提示词", "SD"],
     "useCase": "精确控制SD出图效果",
-    "example": "输入：主题「古风美女」风格「水墨画」→ 完整SD参数"
+    "example": "输入：主题「古风美女」风格「水墨画」→ 完整SD参数",
+    "en": {
+      "title": "Stable Diffusion Prompt Generator",
+      "content": "Generate Stable Diffusion prompts.\n\nTheme: {theme}\nStyle: {style}\n\nProvide:\n1. **Positive prompt** (English, comma-separated)\n2. **Negative prompt** (English, exclude unwanted elements)\n3. **Recommended settings**: sampler, steps, CFG scale, seed\n4. Explain each keyword's purpose",
+      "tags": ["Stable Diffusion", "AI Art", "Prompt Engineering", "SD"],
+      "useCase": "Precisely control Stable Diffusion output",
+      "example": "Input: theme \"Chinese beauty\" style \"ink painting\" → Full SD params"
+    }
   },
   {
     "id": "art-logo",
@@ -87,7 +143,14 @@
     "content": "请为我的品牌生成Logo设计的AI提示词。\n\n品牌名：{name}\n行业：{industry}\n风格偏好：{style}\n\n请生成：\n1. 3个不同风格的Midjourney提示词\n2. 每个提示词对应的设计理念说明\n3. 配色建议\n4. 适用场景分析",
     "tags": ["Logo", "品牌设计", "Midjourney", "AI设计"],
     "useCase": "用AI快速生成Logo设计概念",
-    "example": "输入：品牌「清风茶饮」行业「茶饮」→ 3套Logo方案"
+    "example": "输入：品牌「清风茶饮」行业「茶饮」→ 3套Logo方案",
+    "en": {
+      "title": "AI Logo Design Prompts",
+      "content": "Generate AI prompts for brand logo design.\n\nBrand name: {name}\nIndustry: {industry}\nStyle preference: {style}\n\nGenerate:\n1. 3 Midjourney prompts in different styles\n2. Design concept explanation for each\n3. Color palette suggestions\n4. Use case analysis",
+      "tags": ["Logo", "Brand Design", "Midjourney", "AI Design"],
+      "useCase": "Quickly generate logo design concepts with AI",
+      "example": "Input: brand \"Fresh Tea\" industry \"Beverage\" → 3 logo concepts"
+    }
   },
   {
     "id": "work-meeting",
@@ -97,7 +160,14 @@
     "content": "你是一位专业的会议记录员。请根据以下会议内容生成会议纪要。\n\n会议主题：{topic}\n参会人：{participants}\n会议内容/录音转文字：\n{content}\n\n请生成：\n1. **会议概要**（3-5句话总结）\n2. **讨论要点**（分条列出）\n3. **决议事项**（明确结论）\n4. **待办事项**（含负责人和截止时间）\n5. **下次会议安排**",
     "tags": ["会议纪要", "职场", "效率", "办公"],
     "useCase": "快速整理会议内容，生成规范纪要",
-    "example": "贴入会议录音文字 → 结构化会议纪要"
+    "example": "贴入会议录音文字 → 结构化会议纪要",
+    "en": {
+      "title": "Meeting Minutes Generator",
+      "content": "You are a professional meeting recorder. Generate meeting minutes from the following content.\n\nMeeting topic: {topic}\nParticipants: {participants}\nMeeting content / transcript:\n{content}\n\nGenerate:\n1. **Summary** (3-5 sentences)\n2. **Key discussion points** (bullet list)\n3. **Decisions made** (clear conclusions)\n4. **Action items** (with owners and deadlines)\n5. **Next meeting**",
+      "tags": ["Meeting Minutes", "Productivity", "Office", "Business"],
+      "useCase": "Quickly structure meeting notes into professional minutes",
+      "example": "Paste meeting transcript → Structured meeting minutes"
+    }
   },
   {
     "id": "work-ppt",
@@ -107,7 +177,14 @@
     "content": "你是一位资深演示文稿设计师。请为以下主题生成PPT大纲。\n\n主题：{topic}\n场合：{occasion}\n时长：{duration}分钟\n\n请生成：\n1. **封面页**标题和副标题\n2. **目录页**结构\n3. 每页的：标题 + 核心要点（3-5个）+ 建议配图/图表类型\n4. **总结页**关键结论\n5. **Q&A页**预设问题及回答\n\n总页数控制在{duration}分钟左右（约1-2分钟/页）。",
     "tags": ["PPT", "演示文稿", "职场", "汇报"],
     "useCase": "快速生成PPT框架，提升准备效率",
-    "example": "输入：主题「Q2业务汇报」时长15分钟 → 10页PPT大纲"
+    "example": "输入：主题「Q2业务汇报」时长15分钟 → 10页PPT大纲",
+    "en": {
+      "title": "Presentation Outline Generator",
+      "content": "You are a senior presentation designer. Generate a presentation outline.\n\nTopic: {topic}\nOccasion: {occasion}\nDuration: {duration} minutes\n\nGenerate:\n1. **Cover page** title and subtitle\n2. **Agenda** structure\n3. Each slide: title + key points (3-5) + suggested visuals\n4. **Summary** key takeaways\n5. **Q&A** anticipated questions and answers\n\nTarget ~{duration} minutes (1-2 min per slide).",
+      "tags": ["Presentation", "PPT", "Business", "Slides"],
+      "useCase": "Quickly generate presentation frameworks",
+      "example": "Input: topic \"Q2 Business Review\" 15min → 10-slide outline"
+    }
   },
   {
     "id": "work-excel",
@@ -117,7 +194,14 @@
     "content": "你是Excel专家。请根据我的需求生成Excel公式。\n\n需求：{description}\n数据示例：{example}\n\n请提供：\n1. 公式本身\n2. 逐段解释\n3. 使用注意事项\n4. 如果需要VBA宏，也一并提供",
     "tags": ["Excel", "公式", "办公", "数据分析"],
     "useCase": "快速解决Excel公式问题",
-    "example": "输入：「根据A列日期筛选本月数据」→ 公式+解释"
+    "example": "输入：「根据A列日期筛选本月数据」→ 公式+解释",
+    "en": {
+      "title": "Excel Formula Generator",
+      "content": "You are an Excel expert. Generate formulas based on my requirements.\n\nRequirement: {description}\nData example: {example}\n\nProvide:\n1. The formula\n2. Explanation of each part\n3. Usage notes\n4. VBA macro if needed",
+      "tags": ["Excel", "Formula", "Office", "Data Analysis"],
+      "useCase": "Quickly solve Excel formula challenges",
+      "example": "Input: \"filter rows by current month\" → Formula + explanation"
+    }
   },
   {
     "id": "learn-translate",
@@ -127,7 +211,14 @@
     "content": "你是一位学术翻译专家，精通中英互译。请翻译以下学术文本。\n\n原文：{text}\n目标语言：{target_language}\n\n要求：\n1. 保持学术严谨性\n2. 专业术语准确\n3. 句式符合目标语言学术写作习惯\n4. 标注不确定的翻译，给出备选\n5. 保持原文段落结构",
     "tags": ["翻译", "学术", "论文", "英语"],
     "useCase": "翻译学术论文、文献摘要",
-    "example": "输入英文论文段落 → 高质量中文学术翻译"
+    "example": "输入英文论文段落 → 高质量中文学术翻译",
+    "en": {
+      "title": "Academic Paper Translator",
+      "content": "You are an academic translation expert fluent in Chinese and English.\n\nSource text: {text}\nTarget language: {target_language}\n\nRequirements:\n1. Maintain academic rigor\n2. Accurate technical terminology\n3. Follow target language academic writing conventions\n4. Flag uncertain translations with alternatives\n5. Preserve original paragraph structure",
+      "tags": ["Translation", "Academic", "Research", "Language"],
+      "useCase": "Translate academic papers and research abstracts",
+      "example": "Paste English paper paragraph → High-quality academic translation"
+    }
   },
   {
     "id": "learn-explain",
@@ -137,7 +228,14 @@
     "content": "你是一位擅长用简单语言解释复杂概念的教育家。\n\n请用通俗易懂的语言解释以下概念：\n\n概念：{concept}\n目标受众：{audience}\n\n要求：\n1. 先用一句话概括核心含义\n2. 用日常类比帮助理解\n3. 给出一个具体例子\n4. 用「费曼学习法」的风格，假设对方是12岁小孩\n5. 最后用专业术语总结",
     "tags": ["学习", "教育", "解释", "知识"],
     "useCase": "快速理解复杂概念，或向他人解释",
-    "example": "输入：概念「区块链」受众「非技术人员」→ 通俗解释"
+    "example": "输入：概念「区块链」受众「非技术人员」→ 通俗解释",
+    "en": {
+      "title": "Complex Concept Explainer",
+      "content": "You are an educator skilled at explaining complex concepts simply.\n\nExplain the following concept in plain language:\n\nConcept: {concept}\nTarget audience: {audience}\n\nRequirements:\n1. One-sentence core explanation\n2. Everyday analogy for understanding\n3. A concrete example\n4. Use Feynman technique style\n5. End with the technical summary",
+      "tags": ["Learning", "Education", "Explanation", "Knowledge"],
+      "useCase": "Quickly understand or explain complex concepts",
+      "example": "Input: concept \"blockchain\" audience \"non-technical\" → Simple explanation"
+    }
   },
   {
     "id": "business-swot",
@@ -147,7 +245,14 @@
     "content": "你是一位资深商业分析师。请对以下业务进行SWOT分析。\n\n公司/产品：{company}\n行业：{industry}\n简要描述：{description}\n\n请输出：\n1. **优势(Strengths)**：内部有利因素\n2. **劣势(Weaknesses)**：内部不利因素\n3. **机会(Opportunities)**：外部有利因素\n4. **威胁(Threats)**：外部不利因素\n5. **策略建议**：基于SWOT的4种策略（SO/WO/ST/WT）\n\n用表格形式输出，每项3-5个要点。",
     "tags": ["商业分析", "SWOT", "战略", "商业计划"],
     "useCase": "快速进行商业分析，辅助决策",
-    "example": "输入：公司「某AI创业公司」→ 完整SWOT分析报告"
+    "example": "输入：公司「某AI创业公司」→ 完整SWOT分析报告",
+    "en": {
+      "title": "SWOT Analysis Generator",
+      "content": "You are a senior business analyst. Perform a SWOT analysis.\n\nCompany/Product: {company}\nIndustry: {industry}\nDescription: {description}\n\nOutput:\n1. **Strengths**: internal advantages\n2. **Weaknesses**: internal disadvantages\n3. **Opportunities**: external favorable factors\n4. **Threats**: external unfavorable factors\n5. **Strategy Recommendations**: SO/WO/ST/WT strategies\n\nUse table format, 3-5 points per category.",
+      "tags": ["Business Analysis", "SWOT", "Strategy", "Business Plan"],
+      "useCase": "Quickly conduct business analysis for decision-making",
+      "example": "Input: company \"AI startup\" → Complete SWOT analysis"
+    }
   },
   {
     "id": "business-copywriting",
@@ -157,6 +262,13 @@
     "content": "你是一位资深广告文案策划师。请为以下产品生成A/B测试版本的广告文案。\n\n产品：{product}\n目标用户：{audience}\n卖点：{selling_points}\n投放渠道：{channel}\n\n请生成：\n**版本A**（情感驱动）：\n- 标题\n- 正文（100字内）\n- 行动号召(CTA)\n\n**版本B**（理性驱动）：\n- 标题\n- 正文（100字内）\n- 行动号召(CTA)\n\n并说明两个版本的策略差异和适用场景。",
     "tags": ["广告", "文案", "A/B测试", "营销"],
     "useCase": "快速生成广告文案变体，优化投放效果",
-    "example": "输入产品信息 → 两套不同风格的广告文案"
+    "example": "输入产品信息 → 两套不同风格的广告文案",
+    "en": {
+      "title": "A/B Ad Copy Generator",
+      "content": "You are a senior ad copywriter. Generate A/B test versions of ad copy.\n\nProduct: {product}\nTarget audience: {audience}\nSelling points: {selling_points}\nChannel: {channel}\n\nGenerate:\n**Version A** (Emotion-driven):\n- Headline\n- Body (under 80 words)\n- CTA\n\n**Version B** (Logic-driven):\n- Headline\n- Body (under 80 words)\n- CTA\n\nExplain the strategy differences and use cases for each.",
+      "tags": ["Advertising", "Copywriting", "A/B Testing", "Marketing"],
+      "useCase": "Quickly generate ad copy variants for optimization",
+      "example": "Input product info → Two different ad copy versions"
+    }
   }
 ]

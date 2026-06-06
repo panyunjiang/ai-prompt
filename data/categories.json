@@ -1,8 +1,8 @@
 [
-  { "slug": "writing", "name": "写作文案", "icon": "✍️", "description": "小红书、博客、邮件、小说等各类写作提示词" },
-  { "slug": "coding", "name": "编程开发", "icon": "💻", "description": "代码调试、Review、正则、架构设计等编程提示词" },
-  { "slug": "art", "name": "AI绘画", "icon": "🎨", "description": "Midjourney、Stable Diffusion、DALL-E等绘画提示词" },
-  { "slug": "work", "name": "办公效率", "icon": "📊", "description": "会议纪要、PPT、Excel、邮件等办公场景提示词" },
-  { "slug": "learning", "name": "学习教育", "icon": "📚", "description": "翻译、解释概念、论文辅助等学习提示词" },
-  { "slug": "business", "name": "商业营销", "icon": "💰", "description": "商业分析、广告文案、营销策略等商业提示词" }
+  { "slug": "writing", "name": "写作文案", "icon": "✍️", "description": "小红书、博客、邮件、小说等各类写作提示词", "en": { "name": "Writing & Copywriting", "description": "Prompts for blogs, social media, emails, and all writing tasks" } },
+  { "slug": "coding", "name": "编程开发", "icon": "💻", "description": "代码调试、Review、正则、架构设计等编程提示词", "en": { "name": "Coding & Development", "description": "Prompts for debugging, code review, regex, and architecture" } },
+  { "slug": "art", "name": "AI绘画", "icon": "🎨", "description": "Midjourney、Stable Diffusion、DALL-E等绘画提示词", "en": { "name": "AI Art & Image", "description": "Prompts for Midjourney, Stable Diffusion, DALL-E and more" } },
+  { "slug": "work", "name": "办公效率", "icon": "📊", "description": "会议纪要、PPT、Excel、邮件等办公场景提示词", "en": { "name": "Office & Productivity", "description": "Prompts for meetings, presentations, Excel, and office tasks" } },
+  { "slug": "learning", "name": "学习教育", "icon": "📚", "description": "翻译、解释概念、论文辅助等学习提示词", "en": { "name": "Learning & Education", "description": "Prompts for translation, concept explanation, and studying" } },
+  { "slug": "business", "name": "商业营销", "icon": "💰", "description": "商业分析、广告文案、营销策略等商业提示词", "en": { "name": "Business & Marketing", "description": "Prompts for business analysis, ad copy, and marketing strategy" } }
 ]
