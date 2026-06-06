@@ -6,18 +6,20 @@ export function generateStaticParams() {
   return categories.map((c) => ({ slug: c.slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }) {
-  const cat = getCategoryBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const cat = getCategoryBySlug(slug);
   if (!cat) return { title: "Category not found" };
   const en = getCategory(cat, "en");
   return { title: `${cat.icon} ${en.name} AI Prompts | PromptHub`, description: en.description };
 }
 
-export default function EnCategoryPage({ params }: { params: { slug: string } }) {
-  const cat = getCategoryBySlug(params.slug);
+export default async function EnCategoryPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const cat = getCategoryBySlug(slug);
   if (!cat) notFound();
   const en = getCategory(cat, "en");
-  const promptList = getPromptsByCategory(params.slug);
+  const promptList = getPromptsByCategory(slug);
 
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 16px" }}>

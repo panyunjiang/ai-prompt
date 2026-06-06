@@ -7,15 +7,17 @@ export function generateStaticParams() {
   return prompts.map((p) => ({ id: p.id }));
 }
 
-export function generateMetadata({ params }: { params: { id: string } }) {
-  const prompt = getPromptById(params.id);
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const prompt = getPromptById(id);
   if (!prompt) return { title: "Prompt not found" };
   const t = getPrompt(prompt, "en");
   return { title: `${t.title} - AI Prompt | PromptHub`, description: t.useCase };
 }
 
-export default function EnPromptDetailPage({ params }: { params: { id: string } }) {
-  const prompt = getPromptById(params.id);
+export default async function EnPromptDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const prompt = getPromptById(id);
   if (!prompt) notFound();
   const t = getPrompt(prompt, "en");
   const cat = getCategoryBySlug(prompt.category);

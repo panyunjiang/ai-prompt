@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Header from "@/components/Header";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,25 +18,14 @@ export const metadata: Metadata = {
     type: "website",
   },
   robots: { index: true, follow: true },
+  icons: { icon: "/icon.svg", shortcut: "/icon.svg" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-CN">
-      <body style={{ background: "#f5f7fa", margin: 0, fontFamily: 'system-ui, -apple-system, sans-serif' }}>
-        <header style={{ height: 56, background: "white", borderBottom: "1px solid #e5e7eb", position: "sticky", top: 0, zIndex: 50 }}>
-          <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 16px", height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", gap: 8 }}>
-              <div style={{ width: 32, height: 32, borderRadius: 8, background: "linear-gradient(135deg, #6366f1, #8b5cf6)", display: "flex", alignItems: "center", justifyContent: "center", color: "white", fontWeight: 800, fontSize: 14 }}>P</div>
-              <span style={{ fontSize: "1.15rem", fontWeight: 700, color: "#1e293b" }}>PromptHub</span>
-            </Link>
-            <nav style={{ display: "flex", gap: 4, alignItems: "center" }}>
-              <Link href="/" style={{ padding: "8px 16px", borderRadius: 8, fontSize: "0.9rem", color: "#64748b", textDecoration: "none" }}>首页</Link>
-              <Link href="/search" style={{ padding: "8px 16px", borderRadius: 8, fontSize: "0.9rem", color: "#64748b", textDecoration: "none" }}>搜索</Link>
-              <Link href="/en" style={{ padding: "6px 12px", borderRadius: 6, fontSize: "0.8rem", color: "#6366f1", border: "1px solid #6366f1", textDecoration: "none" }}>EN</Link>
-            </nav>
-          </div>
-        </header>
+      <body style={{ background: "#f5f7fa", margin: 0, fontFamily: "system-ui, -apple-system, sans-serif" }}>
+        <Header />
         <main>{children}</main>
         <footer style={{ background: "#0f172a", color: "#94a3b8", padding: "40px 16px", textAlign: "center", marginTop: 40 }}>
           <div style={{ maxWidth: 800, margin: "0 auto" }}>
