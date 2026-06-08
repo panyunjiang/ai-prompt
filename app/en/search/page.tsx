@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { searchPrompts, categories, getPrompt, getCategory } from "@/lib/data";
 
-export default function EnSearchPage({ searchParams }: { searchParams: { q?: string } }) {
-  const query = (searchParams.q || "").trim();
+export default async function EnSearchPage({ searchParams }: { searchParams: Promise<{ q?: string }> }) {
+  const { q } = await searchParams;
+  const query = (q || "").trim();
   const results = query ? searchPrompts(query, "en") : [];
   const hotTags = ["ChatGPT", "Midjourney", "Writing", "Coding", "Art", "Productivity", "SEO", "Copywriting"];
 
