@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import Header from "@/components/Header";
 import "./globals.css";
@@ -19,12 +20,29 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   icons: { icon: "/icon.svg", shortcut: "/icon.svg" },
+  verification: {
+    other: {
+      "baidu-site-verification": "codeva-akYN5rMLN6",
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="zh-CN">
       <body style={{ background: "#f5f7fa", margin: 0, fontFamily: "system-ui, -apple-system, sans-serif" }}>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-9NW77YSS9T"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9NW77YSS9T');
+          `}
+        </Script>
         <Header />
         <main>{children}</main>
         <footer style={{ background: "#0f172a", color: "#94a3b8", padding: "40px 16px", textAlign: "center", marginTop: 40 }}>
