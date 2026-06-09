@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prompts, getPromptById, getPrompt, getCategoryBySlug, getCategory } from "@/lib/data";
 import CopyButton from "@/components/CopyButton";
+import { PromptJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return prompts.map((p) => ({ id: p.id }));
@@ -25,6 +26,18 @@ export default async function EnPromptDetailPage({ params }: { params: Promise<{
 
   return (
     <div style={{ maxWidth: 800, margin: "0 auto", padding: "0 16px" }}>
+      <PromptJsonLd
+        title={t.title}
+        description={t.useCase}
+        url={`https://prompt.aiv.yn.cn/en/prompt/${prompt.id}`}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", url: "https://prompt.aiv.yn.cn/en" },
+          { name: catEn?.name || prompt.category, url: `https://prompt.aiv.yn.cn/en/category/${prompt.category}` },
+          { name: t.title, url: `https://prompt.aiv.yn.cn/en/prompt/${prompt.id}` },
+        ]}
+      />
       <div style={{ padding: "32px 0" }}>
         <div style={{ fontSize: "0.9rem", color: "#94a3b8", marginBottom: 24 }}>
           <Link href="/en">Home</Link> / <Link href={`/en/category/${prompt.category}`}>{catEn?.name}</Link> / <span style={{ color: "#64748b" }}>{t.title}</span>

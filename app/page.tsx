@@ -1,11 +1,13 @@
 import Link from "next/link";
 import { categories, prompts } from "@/lib/data";
+import { WebsiteJsonLd } from "@/components/JsonLd";
 
 export default function HomePage() {
   const platforms = [...new Set(prompts.map((p) => p.platform))];
 
   return (
     <div style={{ maxWidth: 1200, margin: "0 auto", padding: "0 16px" }}>
+      <WebsiteJsonLd />
       {/* Hero */}
       <section style={{ textAlign: "center", padding: "60px 0 40px" }}>
         <h1 style={{ fontSize: "2.2rem", fontWeight: 800, color: "#1e293b", marginBottom: 12 }}>

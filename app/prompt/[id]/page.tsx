@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { prompts, getPromptById, getCategoryBySlug } from "@/lib/data";
 import CopyButton from "@/components/CopyButton";
+import { PromptJsonLd, BreadcrumbJsonLd } from "@/components/JsonLd";
 
 export function generateStaticParams() {
   return prompts.map((p) => ({ id: p.id }));
@@ -22,6 +23,18 @@ export default async function PromptDetailPage({ params }: { params: Promise<{ i
 
   return (
     <div style={{ maxWidth: 800, margin: "0 auto", padding: "0 16px" }}>
+      <PromptJsonLd
+        title={prompt.title}
+        description={prompt.useCase}
+        url={`https://prompt.aiv.yn.cn/prompt/${prompt.id}`}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "首页", url: "https://prompt.aiv.yn.cn" },
+          { name: cat?.name || prompt.category, url: `https://prompt.aiv.yn.cn/category/${prompt.category}` },
+          { name: prompt.title, url: `https://prompt.aiv.yn.cn/prompt/${prompt.id}` },
+        ]}
+      />
       <div style={{ padding: "32px 0" }}>
         <div style={{ fontSize: "0.9rem", color: "#94a3b8", marginBottom: 24 }}>
           <Link href="/">首页</Link> / <Link href={`/category/${prompt.category}`}>{cat?.name}</Link> / <span style={{ color: "#64748b" }}>{prompt.title}</span>
