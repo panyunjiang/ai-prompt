@@ -1,0 +1,42 @@
+name: PromptHub - 每周提示词 (周三 10:00)
+
+on:
+  schedule:
+    # 每周三北京时间 10:00 = UTC 02:00 Wednesday
+    - cron: "0 2 * * 3"
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: 生成每周提示词
+        run: node scripts/generate-prompts.js 5
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+
+      - name: 提交并推送
+        run: |
+          git config user.name "prompthub-bot"
+          git config user.email "bot@aiv.yn.cn"
+          git add data/prompts.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "content: weekly prompt update [skip ci]"
+            git push
+            echo "✅ 已推送新的提示词到GitHub，Vercel将自动部署"
+          fi
