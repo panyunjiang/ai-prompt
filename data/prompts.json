@@ -525,5 +525,328 @@
       "useCase": "Quickly generate competitor analysis reports",
       "example": "Input: my product + competitor list → Full analysis report"
     }
+  },
+  {
+    "id": "writing-video-script",
+    "title": "短视频脚本生成",
+    "category": "writing",
+    "platform": "ChatGPT",
+    "content": "你是一位资深短视频内容策划师。请为以下主题生成短视频拍摄脚本。\n\n主题：{topic}\n平台：{platform}\n时长：{duration}秒\n目标受众：{audience}\n\n请输出：\n1. **黄金3秒开头**（Hook：问题/悬念/冲突/反常识）\n2. **分镜头脚本**（表格：镜号/画面描述/台词/时长/备注）\n3. **情绪曲线**（标注高潮点和转折点）\n4. **结尾引导**（关注/点赞/评论引导语）\n5. **文案标题**（3个备选）",
+    "tags": ["短视频", "脚本", "抖音", "内容创作"],
+    "useCase": "快速生成短视频拍摄脚本，适合抖音、小红书等",
+    "example": "输入：主题「高效学习方法」平台「抖音」→ 完整分镜头脚本",
+    "en": {
+      "title": "Short Video Script Generator",
+      "content": "You are a senior short-form video content strategist. Generate a shooting script.\n\nTopic: {topic}\nPlatform: {platform}\nDuration: {duration}s\nTarget audience: {audience}\n\nOutput:\n1. **Golden 3-second hook** (question/suspense/conflict/surprising fact)\n2. **Shot-by-shot script** (table: shot#/visual description/dialogue/duration/notes)\n3. **Emotion curve** (mark climax and turning points)\n4. **Ending CTA** (follow/like/comment prompt)\n5. **Title options** (3 alternatives)",
+      "tags": ["Short Video", "Script", "TikTok", "Content Creation"],
+      "useCase": "Quickly generate short video shooting scripts for TikTok, Reels, etc.",
+      "example": "Input: topic \"efficient study methods\" → Complete shot-by-shot script"
+    }
+  },
+  {
+    "id": "writing-zhihu",
+    "title": "知乎高质量回答",
+    "category": "writing",
+    "platform": "ChatGPT",
+    "content": "你是一位资深知乎创作者。请为以下问题撰写高质量回答。\n\n问题：{question}\n\n要求：\n1. 开头15字内抓住注意力（数据/反差/个人经历）\n2. 分点论证，每点有案例或数据支撑\n3. 穿插金句（可摘录引用）\n4. 结尾总结+引发讨论\n5. 控制在800-1500字\n6. 语气真诚、有深度，拒绝营销口吻",
+    "tags": ["知乎", "问答", "内容营销", "写作"],
+    "useCase": "快速撰写高质量知乎回答，提升个人影响力",
+    "example": "输入：问题「如何保持长期自律」→ 深度知乎回答",
+    "en": {
+      "title": "Zhihu Quality Answer Generator",
+      "content": "You are a top Zhihu (Quora-like) contributor. Write a high-quality answer.\n\nQuestion: {question}\n\nRequirements:\n1. Hook within 15 words (data/contrast/personal story)\n2. Point-by-point with cases or data\n3. Golden quotes throughout\n4. End with summary + discussion starter\n5. 500-1000 words\n6. Genuine, deep tone — avoid marketing speak",
+      "tags": ["Zhihu", "Q&A", "Content Marketing", "Writing"],
+      "useCase": "Quickly write high-quality Zhihu answers to build personal brand",
+      "example": "Input: question \"How to stay disciplined\" → In-depth answer"
+    }
+  },
+  {
+    "id": "writing-press-release",
+    "title": "新闻稿撰写",
+    "category": "writing",
+    "platform": "ChatGPT",
+    "content": "你是一位资深PR撰稿人。请为以下事件撰写新闻稿。\n\n事件：{event}\n公司/组织：{organization}\n关键信息：{key_facts}\n发布渠道：{channel}\n\n请生成：\n1. **标题**（包含关键词，20字内）\n2. **导语**（5W1H，80字内）\n3. **正文**（倒金字塔结构：重要→次要→背景）\n4. **关于公司**（标准介绍段）\n5. **媒体联系**（模板）\n6. **社交媒体版**（适合微博/微信的短版）",
+    "tags": ["新闻稿", "PR", "媒体", "写作"],
+    "useCase": "快速撰写专业新闻稿，适合企业PR和品牌传播",
+    "example": "输入：事件「新产品发布」→ 完整新闻稿+社交媒体版",
+    "en": {
+      "title": "Press Release Writer",
+      "content": "You are a senior PR writer. Draft a press release.\n\nEvent: {event}\nOrganization: {organization}\nKey facts: {key_facts}\nDistribution channel: {channel}\n\nGenerate:\n1. **Headline** (with keywords, under 12 words)\n2. **Lead** (5W1H, under 50 words)\n3. **Body** (inverted pyramid: key info → details → background)\n4. **About the company** (standard boilerplate)\n5. **Media contact** (template)\n6. **Social media version** (short version for Twitter/LinkedIn)",
+      "tags": ["Press Release", "PR", "Media", "Writing"],
+      "useCase": "Quickly draft professional press releases",
+      "example": "Input: event \"product launch\" → Full press release + social version"
+    }
+  },
+  {
+    "id": "coding-unit-test",
+    "title": "单元测试生成",
+    "category": "coding",
+    "platform": "ChatGPT",
+    "content": "你是资深测试工程师。请为以下函数生成单元测试。\n\n```{language}\n{code}\n```\n\n请生成：\n1. **测试用例清单**（表格：用例名/输入/预期输出/覆盖场景）\n2. **完整测试代码**（使用{language}主流测试框架）\n3. **边界情况测试**（空值、边界值、异常输入）\n4. **Mock/Stub设置**（如需）\n5. **覆盖率建议**",
+    "tags": ["测试", "单元测试", "代码质量", "TDD"],
+    "useCase": "快速为函数生成完整单元测试，覆盖正常+边界+异常",
+    "example": "贴入函数代码 → Jest/Vitest完整测试用例",
+    "en": {
+      "title": "Unit Test Generator",
+      "content": "You are a senior test engineer. Generate unit tests for the following function.\n\n```{language}\n{code}\n```\n\nGenerate:\n1. **Test case list** (table: name/input/expected output/scenario)\n2. **Complete test code** (using {language}'s mainstream framework)\n3. **Edge cases** (null, boundary, invalid input)\n4. **Mock/Stub setup** (if needed)\n5. **Coverage recommendations**",
+      "tags": ["Testing", "Unit Tests", "Code Quality", "TDD"],
+      "useCase": "Quickly generate full unit tests covering normal, edge, and error cases",
+      "example": "Paste function code → Complete Jest/Vitest test cases"
+    }
+  },
+  {
+    "id": "coding-docker",
+    "title": "Docker配置生成",
+    "category": "coding",
+    "platform": "ChatGPT",
+    "content": "你是一位DevOps专家。请为以下项目生成Docker配置。\n\n项目类型：{project_type}\n技术栈：{tech_stack}\n端口：{port}\n环境变量：{env_vars}\n\n请生成：\n1. **Dockerfile**（多阶段构建，优化镜像大小）\n2. **.dockerignore**\n3. **docker-compose.yml**（含依赖服务如DB/Redis）\n4. **构建和运行命令**\n5. **最佳实践说明**（安全、缓存、健康检查）",
+    "tags": ["Docker", "DevOps", "部署", "容器"],
+    "useCase": "快速生成生产级Docker配置",
+    "example": "输入：项目「Next.js + MySQL + Redis」→ 完整Docker三件套",
+    "en": {
+      "title": "Docker Config Generator",
+      "content": "You are a DevOps expert. Generate Docker configuration.\n\nProject type: {project_type}\nTech stack: {tech_stack}\nPort: {port}\nEnvironment variables: {env_vars}\n\nGenerate:\n1. **Dockerfile** (multi-stage build, optimized image size)\n2. **.dockerignore**\n3. **docker-compose.yml** (with dependencies like DB/Redis)\n4. **Build & run commands**\n5. **Best practices** (security, caching, health checks)",
+      "tags": ["Docker", "DevOps", "Deployment", "Containers"],
+      "useCase": "Quickly generate production-ready Docker configurations",
+      "example": "Input: project \"Next.js + MySQL + Redis\" → Full Docker setup"
+    }
+  },
+  {
+    "id": "coding-interview",
+    "title": "技术面试助手",
+    "category": "coding",
+    "platform": "ChatGPT",
+    "content": "你是一位资深技术面试官。请对以下面试题给出高分回答。\n\n面试题：{question}\n岗位：{role}\n难度：{difficulty}\n\n请提供：\n1. **解题思路**（先讲思路，再写代码）\n2. **最优解**（时间复杂度+空间复杂度分析）\n3. **代码实现**（干净、有注释）\n4. **面试追问**（3个可能的深入问题+回答要点）\n5. **常见错误**（面试者常犯的错）",
+    "tags": ["面试", "算法", "编程", "求职"],
+    "useCase": "准备技术面试，训练解题思维",
+    "example": "输入：题目「实现LRU缓存」岗位「前端」→ 完整面试回答",
+    "en": {
+      "title": "Technical Interview Coach",
+      "content": "You are a senior technical interviewer. Provide a high-score answer.\n\nQuestion: {question}\nRole: {role}\nDifficulty: {difficulty}\n\nProvide:\n1. **Approach** (explain thinking first, then code)\n2. **Optimal solution** (time + space complexity analysis)\n3. **Code implementation** (clean, with comments)\n4. **Follow-up questions** (3 possible deeper questions + answer key points)\n5. **Common mistakes** (frequent pitfalls)",
+      "tags": ["Interview", "Algorithms", "Coding", "Career"],
+      "useCase": "Prepare for technical interviews and practice problem-solving",
+      "example": "Input: question \"Implement LRU Cache\" role \"Frontend\" → Full interview answer"
+    }
+  },
+  {
+    "id": "art-dalle",
+    "title": "DALL-E提示词生成",
+    "category": "art",
+    "platform": "DALL-E",
+    "content": "请为DALL-E 3生成高质量图像提示词。\n\n主题：{theme}\n风格参考：{style}\n用途：{purpose}\n\n请输出：\n1. **主提示词**（英文，详细描述主体+风格+构图+光线+氛围）\n2. **变体提示词**（3个不同角度的描述）\n3. **种子提示词**（Seed Prompt，用于迭代优化）\n4. **中文解释**（每个提示词的含义）\n5. **适用场景**分析",
+    "tags": ["DALL-E", "AI绘画", "提示词", "OpenAI"],
+    "useCase": "精准生成DALL-E 3高质量图像",
+    "example": "输入：主题「北欧风格室内设计」→ 4组DALL-E提示词",
+    "en": {
+      "title": "DALL-E Prompt Generator",
+      "content": "Generate high-quality DALL-E 3 image prompts.\n\nTheme: {theme}\nStyle reference: {style}\nPurpose: {purpose}\n\nOutput:\n1. **Main prompt** (detailed: subject + style + composition + lighting + mood)\n2. **Variations** (3 prompts from different angles)\n3. **Seed prompt** (for iterative refinement)\n4. Explanation of each prompt\n5. **Use case** analysis",
+      "tags": ["DALL-E", "AI Art", "Prompt Engineering", "OpenAI"],
+      "useCase": "Precisely generate high-quality DALL-E 3 images",
+      "example": "Input: theme \"Nordic interior design\" → 4 DALL-E prompt variations"
+    }
+  },
+  {
+    "id": "art-photography",
+    "title": "摄影参数推荐",
+    "category": "art",
+    "platform": "ChatGPT",
+    "content": "你是一位资深摄影师。请为以下拍摄场景推荐参数设置。\n\n拍摄场景：{scene}\n设备类型：{camera}\n想要的效果：{effect}\n\n请提供：\n1. **推荐参数**：光圈/快门/ISO/焦距/白平衡\n2. **构图建议**（三分法/引导线/框架构图等）\n3. **光线利用**（自然光/补光/逆光技巧）\n4. **后期思路**（Lightroom/PS调色方向）\n5. **常见错误和避坑指南**",
+    "tags": ["摄影", "参数", "构图", "拍摄技巧"],
+    "useCase": "快速获得专业摄影参数建议",
+    "example": "输入：场景「日出人像」设备「全画幅微单」→ 完整拍摄方案",
+    "en": {
+      "title": "Photography Settings Advisor",
+      "content": "You are a professional photographer. Recommend settings for this shooting scenario.\n\nScene: {scene}\nCamera: {camera}\nDesired effect: {effect}\n\nProvide:\n1. **Recommended settings**: aperture/shutter/ISO/focal length/white balance\n2. **Composition tips** (rule of thirds/leading lines/framing)\n3. **Lighting** (natural light/fill flash/backlight techniques)\n4. **Post-processing** (Lightroom/PS direction)\n5. **Common mistakes & how to avoid them**",
+      "tags": ["Photography", "Settings", "Composition", "Technique"],
+      "useCase": "Quickly get professional photography settings",
+      "example": "Input: scene \"sunrise portrait\" camera \"full-frame mirrorless\" → Full shooting plan"
+    }
+  },
+  {
+    "id": "art-color-palette",
+    "title": "配色方案生成",
+    "category": "art",
+    "platform": "ChatGPT",
+    "content": "你是一位资深色彩设计师。请为以下需求生成配色方案。\n\n应用场景：{use_case}\n风格偏好：{style}\n情感/氛围：{mood}\n品牌色（如有）：{brand_color}\n\n请输出：\n1. **主色调** + 色号（HEX）\n2. **配色方案**（5-7个颜色组成的色板，标注用途）\n3. **色彩比例**（60-30-10规则）\n4. **深色模式版本**\n5. **配色说明**（为什么这样搭配，传达什么感觉）",
+    "tags": ["配色", "设计", "色彩", "UI"],
+    "useCase": "快速获得专业配色方案，含深色模式",
+    "example": "输入：场景「SaaS后台」风格「极简科技」→ 完整色板",
+    "en": {
+      "title": "Color Palette Generator",
+      "content": "You are a senior color designer. Generate a color palette.\n\nUse case: {use_case}\nStyle: {style}\nMood: {mood}\nBrand color (if any): {brand_color}\n\nOutput:\n1. **Primary color** + HEX code\n2. **Color palette** (5-7 colors, label each usage)\n3. **Color ratio** (60-30-10 rule)\n4. **Dark mode version**\n5. **Rationale** (why this combination, what feeling it conveys)",
+      "tags": ["Color", "Design", "Palette", "UI"],
+      "useCase": "Quickly get professional color palettes with dark mode",
+      "example": "Input: use case \"SaaS dashboard\" style \"minimal tech\" → Full color palette"
+    }
+  },
+  {
+    "id": "art-meme",
+    "title": "表情包创意生成",
+    "category": "art",
+    "platform": "ChatGPT",
+    "content": "你是一位社交媒体创意达人。请为以下场景生成表情包创意。\n\n场景/情绪：{context}\n风格：{style}\n平台：{platform}\n\n请生成：\n1. **表情包概念**（3个不同创意方向）\n2. **配文方案**（每个概念2-3条文案）\n3. **适用场景说明**\n4. **视觉建议**（画面元素、色调、风格参考）\n5. **传播性分析**（哪个最容易火）",
+    "tags": ["表情包", "创意", "社交媒体", "病毒传播"],
+    "useCase": "快速获得表情包创意灵感",
+    "example": "输入：场景「周一上班」风格「搞笑」→ 3个表情包方案",
+    "en": {
+      "title": "Meme Idea Generator",
+      "content": "You are a social media creative expert. Generate meme ideas.\n\nContext/emotion: {context}\nStyle: {style}\nPlatform: {platform}\n\nGenerate:\n1. **Meme concepts** (3 different creative directions)\n2. **Caption options** (2-3 per concept)\n3. **Use case notes**\n4. **Visual suggestions** (elements, colors, style reference)\n5. **Virality analysis** (which is most shareable)",
+      "tags": ["Meme", "Creative", "Social Media", "Viral"],
+      "useCase": "Quickly get meme creative inspiration",
+      "example": "Input: context \"Monday morning\" style \"funny\" → 3 meme concepts"
+    }
+  },
+  {
+    "id": "work-okr",
+    "title": "OKR目标设定",
+    "category": "work",
+    "platform": "ChatGPT",
+    "content": "你是一位OKR管理顾问。请为以下团队/个人制定OKR。\n\n团队/个人：{entity}\n周期：{period}\n重点方向：{focus_areas}\n当前阶段：{stage}\n\n请输出：\n1. **O(目标)**：2-3个鼓舞人心的目标\n2. **KR(关键结果)**：每个O配2-4个可量化的KR\n3. **信心指数**（1-10，初始建议50%把握）\n4. **行动拆解**（Q1第一个月做什么）\n5. **检查节奏**（建议的review频率和方式）",
+    "tags": ["OKR", "目标管理", "管理", "效率"],
+    "useCase": "快速制定科学OKR，提升团队执行力",
+    "example": "输入：团队「产品研发团队」→ 完整季度OKR方案",
+    "en": {
+      "title": "OKR Goal Setting",
+      "content": "You are an OKR management consultant. Set OKRs.\n\nEntity: {entity}\nPeriod: {period}\nFocus areas: {focus_areas}\nCurrent stage: {stage}\n\nOutput:\n1. **Objectives**: 2-3 inspiring goals\n2. **Key Results**: 2-4 quantifiable KRs per objective\n3. **Confidence score** (1-10, recommended initial ~50%)\n4. **Action breakdown** (first month tasks)\n5. **Check-in rhythm** (recommended review frequency and method)",
+      "tags": ["OKR", "Goal Setting", "Management", "Productivity"],
+      "useCase": "Quickly set scientific OKRs to boost team execution",
+      "example": "Input: team \"Product & Engineering\" → Complete quarterly OKR plan"
+    }
+  },
+  {
+    "id": "work-interview-questions",
+    "title": "面试问题生成器",
+    "category": "work",
+    "platform": "ChatGPT",
+    "content": "你是一位资深HR面试官。请为以下岗位生成面试问题。\n\n岗位：{position}\n级别：{level}\n评估重点：{focus}\n\n请生成：\n1. **行为面试题**（5题，STAR法则评估，针对核心能力）\n2. **专业技能题**（5题，由浅入深）\n3. **情景模拟题**（3题，真实工作场景）\n4. **评估维度与打分标准**（表格）\n5. **优质回答vs一般回答**的对比",
+    "tags": ["面试", "HR", "招聘", "管理"],
+    "useCase": "快速准备高质量面试题，提升招聘质量",
+    "example": "输入：岗位「产品经理」级别「中级」→ 完整面试题集",
+    "en": {
+      "title": "Interview Question Generator",
+      "content": "You are a senior HR interviewer. Generate interview questions.\n\nPosition: {position}\nLevel: {level}\nAssessment focus: {focus}\n\nGenerate:\n1. **Behavioral questions** (5, STAR method, targeting core competencies)\n2. **Technical questions** (5, from basic to advanced)\n3. **Situational questions** (3, real workplace scenarios)\n4. **Assessment rubric** (table: dimension + scoring criteria)\n5. **Excellent vs average answer** comparison",
+      "tags": ["Interview", "HR", "Recruiting", "Management"],
+      "useCase": "Quickly prepare high-quality interview questions",
+      "example": "Input: position \"Product Manager\" level \"Mid-level\" → Complete interview kit"
+    }
+  },
+  {
+    "id": "work-feedback",
+    "title": "用户反馈分析",
+    "category": "work",
+    "platform": "ChatGPT",
+    "content": "你是一位产品分析师。请分析以下用户反馈。\n\n产品：{product}\n反馈数据：\n{feedback_data}\n\n请输出：\n1. **反馈分类**（按类型/紧急度/影响面分组）\n2. **高频问题TOP5**（含出现频次和代表性原话）\n3. **情感分析**（正面/负面/中性比例）\n4. **优先级矩阵**（紧急度 vs 重要性）\n5. **改进建议**（立即可做 + 中长期规划）",
+    "tags": ["用户反馈", "产品分析", "数据分析", "产品管理"],
+    "useCase": "快速从用户反馈中提取洞察",
+    "example": "贴入用户反馈文本 → 结构化分析报告",
+    "en": {
+      "title": "User Feedback Analyzer",
+      "content": "You are a product analyst. Analyze the following user feedback.\n\nProduct: {product}\nFeedback data:\n{feedback_data}\n\nOutput:\n1. **Feedback categorization** (by type/urgency/impact)\n2. **Top 5 frequent issues** (with frequency and representative quotes)\n3. **Sentiment analysis** (positive/negative/neutral ratio)\n4. **Priority matrix** (urgency vs importance)\n5. **Improvement suggestions** (immediate actions + long-term plan)",
+      "tags": ["User Feedback", "Product Analysis", "Data Analysis", "Product Management"],
+      "useCase": "Quickly extract insights from user feedback",
+      "example": "Paste user feedback text → Structured analysis report"
+    }
+  },
+  {
+    "id": "learn-book-notes",
+    "title": "读书笔记生成",
+    "category": "learning",
+    "platform": "ChatGPT",
+    "content": "你是一位专业阅读教练。请为以下书籍生成深度读书笔记。\n\n书名：{book_title}\n作者：{author}\n主要章节/内容摘要：{summary}\n\n请输出：\n1. **一句话核心观点**\n2. **3个关键洞察**（每个300字内）\n3. **行动清单**（读完这本书该做什么）\n4. **关联书单**（主题相关的其他好书）\n5. **读书笔记框架**（方便后续做思维导图）",
+    "tags": ["读书", "笔记", "学习", "知识管理"],
+    "useCase": "快速提炼书籍精华，构建知识体系",
+    "example": "输入：书名「原子习惯」→ 结构化读书笔记",
+    "en": {
+      "title": "Book Notes Generator",
+      "content": "You are a professional reading coach. Generate in-depth book notes.\n\nBook: {book_title}\nAuthor: {author}\nSummary of chapters/content: {summary}\n\nOutput:\n1. **One-sentence core idea**\n2. **3 key insights** (under 200 words each)\n3. **Action checklist** (what to do after reading)\n4. **Related books** (similar topic recommendations)\n5. **Mind map framework** (for visual notes)",
+      "tags": ["Reading", "Notes", "Learning", "Knowledge Management"],
+      "useCase": "Quickly extract book essence and build knowledge systems",
+      "example": "Input: book \"Atomic Habits\" → Structured book notes"
+    }
+  },
+  {
+    "id": "learn-exam",
+    "title": "考试题目生成",
+    "category": "learning",
+    "platform": "ChatGPT",
+    "content": "你是一位教育评估专家。请根据以下知识点生成考试题目。\n\n学科：{subject}\n知识点：{topics}\n难度级别：{level}\n题型：{question_types}\n\n请生成：\n1. **选择题**（5题，含4个选项+正确答案+解析）\n2. **填空题**（3题，含答案+易错点提示）\n3. **简答题**（2题，含评分要点）\n4. **综合题**（1题，考查综合运用能力）\n5. **参考答案与评分标准**",
+    "tags": ["考试", "题目", "教育", "测评"],
+    "useCase": "快速生成高质量考试题目",
+    "example": "输入：学科「计算机网络」知识点「TCP/IP」→ 完整试卷",
+    "en": {
+      "title": "Exam Question Generator",
+      "content": "You are an education assessment expert. Generate exam questions based on these topics.\n\nSubject: {subject}\nTopics: {topics}\nDifficulty: {level}\nQuestion types: {question_types}\n\nGenerate:\n1. **Multiple choice** (5 questions, with options + correct answer + explanation)\n2. **Fill in the blank** (3 questions, with answers + common mistakes)\n3. **Short answer** (2 questions, with scoring rubric)\n4. **Comprehensive** (1 question, testing integrated application)\n5. **Answer key & scoring guide**",
+      "tags": ["Exam", "Questions", "Education", "Assessment"],
+      "useCase": "Quickly generate high-quality exam questions",
+      "example": "Input: subject \"Computer Networks\" topic \"TCP/IP\" → Complete exam"
+    }
+  },
+  {
+    "id": "learn-mindmap",
+    "title": "思维导图生成",
+    "category": "learning",
+    "platform": "ChatGPT",
+    "content": "你是一位知识管理专家。请为以下主题生成思维导图结构。\n\n中心主题：{topic}\n深度：{depth}层\n\n请输出：\n1. **中心主题**\n2. **一级分支**（3-7个，用关键词）\n3. **二级分支**（每个一级分支下2-5个要点）\n4. **三级细节**（关键词/关键人物/关键数据）\n5. **关联线**（标注不同分支之间的关联）\n\n格式：使用缩进文本格式，方便导入XMind/MindManager等工具。",
+    "tags": ["思维导图", "知识管理", "学习", "结构化"],
+    "useCase": "快速构建知识框架，理清复杂概念",
+    "example": "输入：主题「机器学习」深度3层 → 完整思维导图结构",
+    "en": {
+      "title": "Mind Map Generator",
+      "content": "You are a knowledge management expert. Generate a mind map structure.\n\nCentral topic: {topic}\nDepth: {depth} levels\n\nOutput:\n1. **Central topic**\n2. **First-level branches** (3-7, use keywords)\n3. **Second-level branches** (2-5 points per first-level branch)\n4. **Third-level details** (key people/data/terms)\n5. **Cross-links** (connections between branches)\n\nFormat: Indented text for easy import into XMind/MindManager.",
+      "tags": ["Mind Map", "Knowledge Management", "Learning", "Structure"],
+      "useCase": "Quickly build knowledge frameworks and clarify complex concepts",
+      "example": "Input: topic \"Machine Learning\" depth 3 → Complete mind map structure"
+    }
+  },
+  {
+    "id": "business-persona",
+    "title": "用户画像生成",
+    "category": "business",
+    "platform": "ChatGPT",
+    "content": "你是一位用户研究专家。请为以下产品生成用户画像。\n\n产品：{product}\n目标市场：{market}\n现有用户数据（如有）：{user_data}\n\n请生成3个典型用户画像，每个包含：\n1. **基本信息**（姓名/年龄/职业/收入/城市）\n2. **行为习惯**（使用频率/使用场景/设备偏好）\n3. **痛点与需求**（3-5个核心痛点）\n4. **使用目标**（使用产品想达成什么）\n5. **用户故事**（一段2句话的场景描述）",
+    "tags": ["用户画像", "产品设计", "用户研究", "UX"],
+    "useCase": "快速建立用户画像，指导产品设计",
+    "example": "输入：产品「在线教育平台」→ 3个典型用户画像",
+    "en": {
+      "title": "User Persona Generator",
+      "content": "You are a user research expert. Generate user personas.\n\nProduct: {product}\nTarget market: {market}\nExisting user data (if any): {user_data}\n\nGenerate 3 typical personas, each with:\n1. **Basic info** (name/age/occupation/income/city)\n2. **Behaviors** (frequency/scenarios/device preferences)\n3. **Pain points & needs** (3-5 core pain points)\n4. **Goals** (what they want to achieve)\n5. **User story** (a 2-sentence scenario description)",
+      "tags": ["User Persona", "Product Design", "User Research", "UX"],
+      "useCase": "Quickly build user personas to guide product design",
+      "example": "Input: product \"Online Education Platform\" → 3 typical user personas"
+    }
+  },
+  {
+    "id": "business-roadmap",
+    "title": "产品路线图规划",
+    "category": "business",
+    "platform": "ChatGPT",
+    "content": "你是一位资深产品战略顾问。请为以下产品制定路线图。\n\n产品：{product}\n当前阶段：{stage}\n愿景：{vision}\n资源约束：{constraints}\n\n请输出：\n1. **产品北极星指标**\n2. **季度路线图**（Q1-Q4，每个Q的聚焦主题和关键交付）\n3. **里程碑节点**（重要发布和验证节点）\n4. **资源需求估算**\n5. **风险与应对预案**\n6. **成功指标**（北极星指标如何拆解到每个Q）",
+    "tags": ["产品管理", "路线图", "战略", "规划"],
+    "useCase": "快速制定产品战略路线图",
+    "example": "输入：产品「AI笔记应用」→ 全年产品路线图",
+    "en": {
+      "title": "Product Roadmap Planner",
+      "content": "You are a senior product strategy consultant. Create a product roadmap.\n\nProduct: {product}\nCurrent stage: {stage}\nVision: {vision}\nResource constraints: {constraints}\n\nOutput:\n1. **North Star Metric**\n2. **Quarterly roadmap** (Q1-Q4, each with theme and key deliverables)\n3. **Milestones** (major releases and validation points)\n4. **Resource estimate**\n5. **Risks & mitigation**\n6. **Success metrics** (how NSM breaks down per quarter)",
+      "tags": ["Product Management", "Roadmap", "Strategy", "Planning"],
+      "useCase": "Quickly create product strategy roadmaps",
+      "example": "Input: product \"AI Note-taking App\" → Full-year product roadmap"
+    }
+  },
+  {
+    "id": "business-pricing",
+    "title": "定价策略分析",
+    "category": "business",
+    "platform": "ChatGPT",
+    "content": "你是一位定价策略专家。请为以下产品分析定价方案。\n\n产品：{product}\n产品成本：{cost}\n目标客户：{customer}\n竞品价格：{competitor_prices}\n\n请输出：\n1. **定价模型推荐**（订阅制/一次性/按量付费/freemium等）\n2. **具体定价方案**（3个Tier：入门/专业/企业）\n3. **定价心理学策略**（锚定效应/中间值效应等）\n4. **A/B测试方案**（如何验证最优定价）\n5. **预期收入模型**（基于不同转化率的营收预测）",
+    "tags": ["定价", "商业模式", "策略", "营收"],
+    "useCase": "科学制定产品定价策略",
+    "example": "输入：产品「SaaS协作工具」→ 完整定价方案",
+    "en": {
+      "title": "Pricing Strategy Analyzer",
+      "content": "You are a pricing strategy expert. Analyze pricing options.\n\nProduct: {product}\nCost: {cost}\nTarget customer: {customer}\nCompetitor prices: {competitor_prices}\n\nOutput:\n1. **Pricing model recommendation** (subscription/one-time/usage-based/freemium)\n2. **Specific pricing plans** (3 tiers: Starter/Pro/Enterprise)\n3. **Pricing psychology tactics** (anchoring/middle effect/decoy)\n4. **A/B testing plan** (how to validate optimal pricing)\n5. **Revenue forecast** (projections based on different conversion rates)",
+      "tags": ["Pricing", "Business Model", "Strategy", "Revenue"],
+      "useCase": "Scientifically develop product pricing strategies",
+      "example": "Input: product \"SaaS Collaboration Tool\" → Complete pricing plan"
+    }
   }
 ]
