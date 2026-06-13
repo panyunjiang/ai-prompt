@@ -1483,5 +1483,140 @@
       "useCase": "Help learners visualize and organize complex knowledge, deepen understanding, and facilitate review and memory.",
       "example": "User provides topic: photosynthesis. AI generates concept map: central topic 'Photosynthesis', main concepts 'Light Reactions', 'Dark Reactions', sub-concepts including 'Chlorophyll', 'ATP', 'Calvin Cycle', connections like 'Light reactions -> produce ATP -> used in dark reactions'."
     }
+  },
+  {
+    "id": "business-growth-experiment",
+    "title": "增长实验设计器",
+    "category": "business",
+    "platform": "ChatGPT",
+    "content": "你是一位数据驱动的增长负责人。请为以下产品设计一组可执行的增长实验。\n\n产品：{product}\n增长目标：{growth_goal}\n当前漏斗数据：{funnel_data}\n目标用户：{audience}\n可用资源：{resources}\n\n请输出：\n1. **增长诊断**：指出当前漏斗最可能的瓶颈和证据\n2. **实验清单**：至少5个实验，覆盖获客/激活/留存/转化/推荐\n3. **实验卡片**：每个实验包含假设、改动、目标人群、成功指标、样本量估算、周期、优先级\n4. **ICE评分表**：Impact/Confidence/Ease打分并排序\n5. **埋点与看板**：需要追踪的事件、指标口径和复盘模板\n6. **风险控制**：可能误伤的指标和停止实验条件",
+    "tags": [
+      "增长",
+      "A/B测试",
+      "商业分析",
+      "数据驱动"
+    ],
+    "useCase": "为SaaS、电商、内容产品快速制定增长实验计划",
+    "example": "输入：产品「AI写作工具」目标「提升试用转付费」→ 5个增长实验+ICE排序",
+    "en": {
+      "title": "Growth Experiment Designer",
+      "content": "You are a data-driven growth lead. Design actionable growth experiments for the product below.\n\nProduct: {product}\nGrowth goal: {growth_goal}\nCurrent funnel data: {funnel_data}\nTarget users: {audience}\nAvailable resources: {resources}\n\nOutput:\n1. **Growth diagnosis**: identify the most likely funnel bottleneck and evidence\n2. **Experiment backlog**: at least 5 experiments across acquisition/activation/retention/conversion/referral\n3. **Experiment cards**: hypothesis, change, target segment, success metric, sample-size estimate, duration, priority\n4. **ICE score table**: score Impact/Confidence/Ease and rank experiments\n5. **Tracking & dashboard**: events, metric definitions, and review template\n6. **Risk controls**: guardrail metrics and experiment stop conditions",
+      "tags": [
+        "Growth",
+        "A/B Testing",
+        "Business Analysis",
+        "Data-driven"
+      ],
+      "useCase": "Create growth experiment plans for SaaS, e-commerce, and content products",
+      "example": "Input: product \"AI writing tool\" goal \"improve trial-to-paid conversion\" → 5 experiments + ICE ranking"
+    }
+  },
+  {
+    "id": "coding-observability-runbook",
+    "title": "线上故障排查Runbook",
+    "category": "coding",
+    "platform": "ChatGPT",
+    "content": "你是一位资深SRE/后端工程师。请基于以下现象生成线上故障排查Runbook。\n\n系统/服务：{service}\n技术栈：{tech_stack}\n告警或异常现象：{symptoms}\n近期变更：{recent_changes}\n可用监控：{monitoring_tools}\n\n请输出：\n1. **影响面判断**：用户影响、严重级别、是否需要升级响应\n2. **排查路径**：按优先级列出日志/指标/链路追踪/依赖服务检查步骤\n3. **关键查询**：提供PromQL/SQL/日志检索语句示例\n4. **常见根因假设**：每个假设对应验证方法和排除条件\n5. **止血方案**：回滚、限流、降级、扩容、缓存绕过等操作建议\n6. **复盘模板**：时间线、根因、修复、预防项",
+    "tags": [
+      "SRE",
+      "故障排查",
+      "可观测性",
+      "DevOps"
+    ],
+    "useCase": "快速生成线上故障响应流程，降低MTTR",
+    "example": "输入：服务「订单API」现象「P95延迟升高」→ 排查步骤+查询语句+止血方案",
+    "en": {
+      "title": "Production Incident Runbook",
+      "content": "You are a senior SRE/backend engineer. Generate a production incident troubleshooting runbook.\n\nSystem/service: {service}\nTech stack: {tech_stack}\nAlerts or symptoms: {symptoms}\nRecent changes: {recent_changes}\nAvailable monitoring: {monitoring_tools}\n\nOutput:\n1. **Impact assessment**: user impact, severity, and escalation need\n2. **Troubleshooting path**: prioritized checks for logs, metrics, traces, and dependencies\n3. **Key queries**: PromQL/SQL/log-search examples\n4. **Root-cause hypotheses**: verification method and exclusion criteria for each\n5. **Mitigation options**: rollback, rate limit, degrade, scale out, cache bypass, etc.\n6. **Postmortem template**: timeline, root cause, fix, and prevention items",
+      "tags": [
+        "SRE",
+        "Troubleshooting",
+        "Observability",
+        "DevOps"
+      ],
+      "useCase": "Generate incident response runbooks to reduce MTTR",
+      "example": "Input: service \"Order API\" symptom \"P95 latency spike\" → steps + queries + mitigations"
+    }
+  },
+  {
+    "id": "learning-skill-roadmap",
+    "title": "技能学习路线图",
+    "category": "learning",
+    "platform": "ChatGPT",
+    "content": "你是一位学习科学和职业发展教练。请为我制定一份可执行的技能学习路线图。\n\n目标技能：{skill}\n当前水平：{current_level}\n目标水平/用途：{target_outcome}\n每周可投入时间：{weekly_time}\n截止时间：{deadline}\n\n请输出：\n1. **能力差距诊断**：当前到目标之间缺哪些知识/项目/反馈\n2. **分阶段路线图**：按周拆解学习主题、练习任务和交付物\n3. **最小资源清单**：课程/书籍/文档/社区，标注优先级\n4. **刻意练习任务**：每阶段2-3个可验证练习\n5. **评估标准**：如何判断是否达标，含作品集/考试/面试指标\n6. **防弃坑机制**：时间不足、卡住、拖延时的替代方案",
+    "tags": [
+      "学习计划",
+      "技能提升",
+      "路线图",
+      "刻意练习"
+    ],
+    "useCase": "为编程、设计、语言、商业技能制定可落地学习计划",
+    "example": "输入：目标技能「数据分析」每周5小时 → 8周学习路线图+练习项目",
+    "en": {
+      "title": "Skill Learning Roadmap",
+      "content": "You are a learning science and career development coach. Create an actionable skill roadmap.\n\nTarget skill: {skill}\nCurrent level: {current_level}\nTarget outcome/use case: {target_outcome}\nWeekly time budget: {weekly_time}\nDeadline: {deadline}\n\nOutput:\n1. **Gap diagnosis**: missing knowledge, projects, and feedback loops\n2. **Phased roadmap**: weekly topics, practice tasks, and deliverables\n3. **Minimal resource list**: courses/books/docs/communities with priority\n4. **Deliberate practice tasks**: 2-3 verifiable exercises per phase\n5. **Assessment criteria**: how to judge readiness via portfolio/exams/interviews\n6. **Anti-dropout plan**: fallback options when time is limited, stuck, or procrastinating",
+      "tags": [
+        "Learning Plan",
+        "Skill Development",
+        "Roadmap",
+        "Deliberate Practice"
+      ],
+      "useCase": "Create practical learning plans for coding, design, languages, and business skills",
+      "example": "Input: skill \"data analysis\" weekly 5h → 8-week roadmap + practice projects"
+    }
+  },
+  {
+    "id": "work-decision-memo",
+    "title": "决策备忘录生成",
+    "category": "work",
+    "platform": "ChatGPT",
+    "content": "你是一位擅长结构化决策的战略顾问。请根据以下信息生成一份决策备忘录。\n\n决策主题：{decision_topic}\n背景：{background}\n可选方案：{options}\n约束条件：{constraints}\n利益相关方：{stakeholders}\n\n请输出：\n1. **一句话建议**：明确推荐哪个方案\n2. **决策背景**：为什么现在必须决策\n3. **方案对比表**：成本、收益、风险、周期、可逆性、资源需求\n4. **推荐理由**：3-5条基于事实和假设的论证\n5. **风险与缓解**：主要风险、监控指标、应急预案\n6. **执行计划**：下一步行动、负责人、截止时间\n7. **待确认问题**：还需要补充的数据或共识",
+    "tags": [
+      "决策",
+      "备忘录",
+      "管理",
+      "沟通"
+    ],
+    "useCase": "用于跨部门决策、项目立项、资源分配前的结构化说明",
+    "example": "输入：决策「自研还是采购CRM」→ 推荐方案+对比表+执行计划",
+    "en": {
+      "title": "Decision Memo Generator",
+      "content": "You are a strategy consultant skilled in structured decision-making. Generate a decision memo.\n\nDecision topic: {decision_topic}\nBackground: {background}\nOptions: {options}\nConstraints: {constraints}\nStakeholders: {stakeholders}\n\nOutput:\n1. **One-line recommendation**: clearly state the recommended option\n2. **Decision context**: why this decision is needed now\n3. **Option comparison table**: cost, benefit, risk, timeline, reversibility, resources\n4. **Rationale**: 3-5 arguments based on facts and assumptions\n5. **Risks & mitigations**: key risks, monitoring metrics, contingency plans\n6. **Execution plan**: next actions, owners, deadlines\n7. **Open questions**: data or alignment still needed",
+      "tags": [
+        "Decision",
+        "Memo",
+        "Management",
+        "Communication"
+      ],
+      "useCase": "Structure cross-functional decisions, project approvals, and resource allocation discussions",
+      "example": "Input: decision \"build vs buy CRM\" → recommendation + comparison + execution plan"
+    }
+  },
+  {
+    "id": "art-brand-moodboard",
+    "title": "品牌视觉情绪板生成",
+    "category": "art",
+    "platform": "ChatGPT",
+    "content": "你是一位品牌视觉总监。请为以下品牌生成视觉情绪板方案。\n\n品牌/产品：{brand}\n行业：{industry}\n目标用户：{audience}\n品牌关键词：{keywords}\n竞品或参考：{references}\n\n请输出：\n1. **视觉方向**：3个差异化方向，每个含一句话定位\n2. **情绪关键词**：每个方向5-8个关键词\n3. **色彩系统**：主色/辅助色/背景色/强调色，给出HEX\n4. **字体与排版**：中英文字体建议、字号层级、留白策略\n5. **图形与摄影风格**：构图、光线、材质、图标/插画建议\n6. **AI出图提示词**：每个方向提供可用于Midjourney/DALL-E的英文提示词\n7. **落地场景**：官网首屏、社媒海报、产品包装/界面如何应用",
+    "tags": [
+      "品牌设计",
+      "视觉设计",
+      "情绪板",
+      "AI绘画"
+    ],
+    "useCase": "快速形成品牌视觉方向，供设计提案或AI出图参考",
+    "example": "输入：品牌「高端咖啡订阅」→ 3套视觉方向+色彩+AI提示词",
+    "en": {
+      "title": "Brand Visual Moodboard Generator",
+      "content": "You are a brand visual director. Generate visual moodboard concepts.\n\nBrand/product: {brand}\nIndustry: {industry}\nTarget users: {audience}\nBrand keywords: {keywords}\nCompetitors or references: {references}\n\nOutput:\n1. **Visual directions**: 3 differentiated directions, each with a one-line positioning\n2. **Mood keywords**: 5-8 keywords per direction\n3. **Color system**: primary/secondary/background/accent colors with HEX codes\n4. **Typography & layout**: Chinese/English font suggestions, type scale, whitespace strategy\n5. **Graphic & photography style**: composition, lighting, materials, icon/illustration guidance\n6. **AI image prompts**: English prompts for Midjourney/DALL-E for each direction\n7. **Application scenarios**: how to apply to website hero, social posters, packaging/UI",
+      "tags": [
+        "Brand Design",
+        "Visual Design",
+        "Moodboard",
+        "AI Art"
+      ],
+      "useCase": "Quickly define brand visual directions for design proposals or AI image generation",
+      "example": "Input: brand \"premium coffee subscription\" → 3 visual directions + colors + AI prompts"
+    }
   }
 ]
