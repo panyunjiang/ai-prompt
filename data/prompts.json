@@ -1753,5 +1753,150 @@
       "useCase": "For helping students deeply understand concepts through questioning, fostering independent thinking",
       "example": "Topic: Newton's Second Law Student level: Intermediate First question: If a constant force acts on an object, how will its velocity change? Why?"
     }
+  },
+  {
+    "id": "writing-character-voice-dialogue",
+    "title": "角色对话声音设计",
+    "category": "writing",
+    "platform": "ChatGPT",
+    "content": "你是一位资深小说家，专注于角色对话的个性化塑造。请为以下场景设计一段对话：场景设定为[未来城市的地下黑市交易]，参与角色包括[一名退休的星际侦探]和[一个拥有神秘过去的机器人商人]。要求：1. 每个角色的语言风格必须截然不同——侦探使用大量省略句和俚语，机器人则采用精确、逻辑化的表达，偶尔插入二进制数字。2. 对话中透露出角色背景和当前冲突（侦探怀疑机器人走私违禁记忆芯片）。3. 对话长度约300字，包含至少3次回合。4. 输出格式：角色名：对话内容。",
+    "tags": [
+      "角色对话",
+      "声音设计",
+      "科幻",
+      "写作技巧",
+      "人物塑造"
+    ],
+    "useCase": "用于小说或剧本中创造具有独特声音的角色对话，增强角色真实感。",
+    "example": "侦探：嘿，老铁，又见面了。\n机器人：010101。是的，概率87.3%。需要什么？\n侦探：少来这套。那个芯片，不是你的菜。",
+    "en": {
+      "title": "Character Voice Dialogue Design",
+      "content": "You are an experienced novelist specializing in personalized character dialogue. Design a dialogue for the following scene: setting is [a futuristic city's underground black market], participants include [a retired interstellar detective] and [a robot merchant with a mysterious past]. Requirements: 1. Each character's speech style must be distinctly different—the detective uses many ellipses and slang, the robot uses precise, logical expressions with occasional binary numbers. 2. The dialogue reveals character backgrounds and current conflict (the detective suspects the robot of smuggling forbidden memory chips). 3. Dialogue length about 300 words, with at least 3 exchanges. 4. Output format: CharacterName: dialogue.",
+      "tags": [
+        "Character Dialogue",
+        "Voice Design",
+        "Sci-Fi",
+        "Writing Technique",
+        "Character Development"
+      ],
+      "useCase": "For creating character dialogue with unique voices in novels or scripts, enhancing realism.",
+      "example": "Detective: Hey, old pal, meet again.\nRobot: 010101. Affirmative, probability 87.3%. Need anything?\nDetective: Cut the crap. That chip, not your thing."
+    }
+  },
+  {
+    "id": "coding-react-native-accessibility",
+    "title": "React Native无障碍组件构建",
+    "category": "coding",
+    "platform": "ChatGPT",
+    "content": "你是一位React Native无障碍专家。请为以下需求创建可复用的无障碍组件：一个支持语音导航的卡片列表组件。需求：1. 使用React Native的Accessibility API，确保每个卡片在屏幕阅读器上正确朗读标题、描述和操作按钮。2. 实现手势操作（滑动删除）但必须有替代的按钮操作，符合WCAG 2.1标准。3. 组件接受数据数组，每个数据项包含id, title, description, actionLabel, onAction。4. 提供TypeScript类型定义。5. 输出格式：先列出类型定义，然后组件代码（使用函数组件和hooks），最后是使用示例。",
+    "tags": [
+      "React Native",
+      "Accessibility",
+      "WCAG",
+      "TypeScript",
+      "组件"
+    ],
+    "useCase": "用于开发无障碍移动应用时构建可访问的卡片列表组件。",
+    "example": "type CardItem = { id: string; title: string; description: string; actionLabel: string; onAction: () => void; };",
+    "en": {
+      "title": "React Native Accessible Component Building",
+      "content": "You are a React Native accessibility expert. Create a reusable accessible card list component with voice navigation support. Requirements: 1. Use React Native's Accessibility API to ensure each card is properly read by screen readers (title, description, action button). 2. Implement gesture operations (swipe to delete) but provide alternative button actions, complying with WCAG 2.1. 3. Component accepts an array of data items, each with id, title, description, actionLabel, onAction. 4. Provide TypeScript type definitions. 5. Output format: first type definitions, then component code (using functional components and hooks), finally usage example.",
+      "tags": [
+        "React Native",
+        "Accessibility",
+        "WCAG",
+        "TypeScript",
+        "Component"
+      ],
+      "useCase": "For building accessible card list components in mobile apps.",
+      "example": "type CardItem = { id: string; title: string; description: string; actionLabel: string; onAction: () => void; };"
+    }
+  },
+  {
+    "id": "art-midjourney-cyberpunk-character",
+    "title": "赛博朋克角色概念设计",
+    "category": "art",
+    "platform": "Midjourney",
+    "content": "你是一位概念艺术家，专攻赛博朋克角色设计。请生成一个详细的文字描述，用于Midjourney生成图像。角色设定：一名在数据黑市工作的黑客，拥有[生物机械左臂]和[全息投影眼镜]。描述应包括：1. 外貌细节：年龄约30岁，混合人种特征，面部有[数据流纹身]在颞部发光。2. 服装：破损的军绿色风衣内衬发光的电路纹理，高领黑色战术夹克，工装裤，多口袋腰带挂满数据工具。3. 环境：背景是雨夜霓虹灯下的狭窄小巷，潮湿的地面反射蓝紫色光。4. 风格参数：--ar 2:3 --v 6.0 --style raw --s 250 --iw 0.5。5. 输出格式：直接输出完整的提示词文本，包含所有细节和参数。",
+    "tags": [
+      "赛博朋克",
+      "角色设计",
+      "Midjourney",
+      "概念艺术",
+      "细节描述"
+    ],
+    "useCase": "用于生成赛博朋克风格的角色概念图，适合游戏或插画前期设计。",
+    "example": "A cyberpunk hacker with a biomechanical left arm and holographic glasses, face with glowing data stream tattoos on temples, wearing a worn olive green trench coat with glowing circuit patterns inside, black high-neck tactical jacket, cargo pants, multi-pocket belt with data tools, standing in a narrow rainy alley at night, neon lights, wet ground reflecting purple-blue light --ar 2:3 --v 6.0 --style raw --s 250 --iw 0.5",
+    "en": {
+      "title": "Cyberpunk Character Concept Design",
+      "content": "You are a concept artist specializing in cyberpunk character design. Generate a detailed textual description for Midjourney to produce an image. Character: a hacker working in the data black market, with [biomechanical left arm] and [holographic glasses]. Description includes: 1. Appearance details: age around 30, mixed ethnicity, with [data stream tattoos] glowing on temples. 2. Clothing: worn olive green trench coat with glowing circuit patterns inside, high-neck black tactical jacket, cargo pants, multi-pocket belt with data tools. 3. Environment: background is a narrow alley at night with neon lights, wet ground reflecting purple-blue light. 4. Style parameters: --ar 2:3 --v 6.0 --style raw --s 250 --iw 0.5. 5. Output format: output the complete prompt text directly with all details and parameters.",
+      "tags": [
+        "Cyberpunk",
+        "Character Design",
+        "Midjourney",
+        "Concept Art",
+        "Detailed Description"
+      ],
+      "useCase": "For generating cyberpunk character concept art, suitable for game or illustration pre-production.",
+      "example": "A cyberpunk hacker with a biomechanical left arm and holographic glasses, face with glowing data stream tattoos on temples, wearing a worn olive green trench coat with glowing circuit patterns inside, black high-neck tactical jacket, cargo pants, multi-pocket belt with data tools, standing in a narrow rainy alley at night, neon lights, wet ground reflecting purple-blue light --ar 2:3 --v 6.0 --style raw --s 250 --iw 0.5"
+    }
+  },
+  {
+    "id": "work-data-driven-presentation",
+    "title": "数据驱动决策演示设计",
+    "category": "work",
+    "platform": "ChatGPT",
+    "content": "你是一位数据可视化顾问和演示专家。请为以下场景设计一份演示文稿大纲：向公司高管汇报[过去季度销售数据]并建议[新市场进入策略]。要求：1. 包含6-8页幻灯片，每页有明确的标题和核心信息。2. 使用数据叙事技巧：第一页展示关键指标（收入、增长率、市场份额），中间页通过对比图表（如柱状图、折线图）分析趋势，最后一页提出具体建议（至少3个行动项）。3. 每页幻灯片提供视觉布局建议（如左上角放关键数字，右侧放图表）。4. 附上演讲备注，说明如何口头强调数据要点。5. 输出格式：幻灯片编号 - 标题 - 核心信息 - 视觉布局 - 演讲备注。",
+    "tags": [
+      "演示设计",
+      "数据叙事",
+      "销售报告",
+      "战略建议",
+      "高管汇报"
+    ],
+    "useCase": "用于准备数据驱动的商业演示，确保逻辑清晰、视觉吸引人。",
+    "example": "幻灯片1 - 标题：Q3销售概览 - 核心信息：收入增长15%，但市场份额下降2% - 视觉布局：左上角大数字显示总收入，右侧是折线图显示季度趋势 - 演讲备注：'请注意，虽然收入增长，但市场份额下降表明竞争加剧。'",
+    "en": {
+      "title": "Data-Driven Decision Presentation Design",
+      "content": "You are a data visualization consultant and presentation expert. Design a presentation outline for the following scenario: reporting [last quarter's sales data] to executives and recommending [new market entry strategy]. Requirements: 1. Include 6-8 slides, each with clear title and core message. 2. Use data storytelling techniques: first slide shows key metrics (revenue, growth rate, market share), middle slides analyze trends with comparison charts (e.g., bar charts, line charts), last slide proposes specific recommendations (at least 3 action items). 3. Provide visual layout suggestions for each slide (e.g., top-left key numbers, right-side chart). 4. Include speaker notes on how to verbally emphasize data points. 5. Output format: Slide number - Title - Core Message - Visual Layout - Speaker Notes.",
+      "tags": [
+        "Presentation Design",
+        "Data Storytelling",
+        "Sales Report",
+        "Strategic Recommendations",
+        "Executive Briefing"
+      ],
+      "useCase": "For preparing data-driven business presentations to ensure clarity and visual appeal.",
+      "example": "Slide 1 - Title: Q3 Sales Overview - Core Message: Revenue up 15%, but market share down 2% - Visual Layout: Top-left large number showing total revenue, right side line chart showing quarterly trend - Speaker Notes: 'Note that while revenue grew, market share decline indicates increased competition.'"
+    }
+  },
+  {
+    "id": "learning-personalized-study-plan",
+    "title": "个性化学习计划生成器",
+    "category": "learning",
+    "platform": "ChatGPT",
+    "content": "你是一位学习科学专家，擅长设计个性化学习路径。请根据以下用户信息生成一个为期12周的学习计划：用户目标：[在3个月内从零基础达到B2级别的西班牙语水平]。用户画像：每天可投入1.5小时，每周5天，偏好视觉和听觉学习风格，有空闲时间可听播客。要求：1. 将12周分为3个阶段：基础搭建（1-4周）、日常对话（5-8周）、流利表达（9-12周）。2. 每周包含具体学习主题、资源推荐（如Duolingo、Netflix西语剧、播客清单）和练习活动。3. 每两周设置一个小里程碑测试（如模拟对话、词汇测试）。4. 考虑学习风格：每周至少3个视觉活动（如闪卡、图表）和3个听觉活动（如跟读、听写）。5. 输出格式：周数 - 阶段 - 主题 - 资源 - 视觉活动 - 听觉活动 - 练习 - 里程碑（如有）。",
+    "tags": [
+      "学习计划",
+      "西班牙语",
+      "个性化",
+      "语言学习",
+      "时间管理"
+    ],
+    "useCase": "用于制定个性化的语言学习计划，适应不同学习风格和时间安排。",
+    "example": "第1周 - 基础搭建 - 发音与基本问候 - Duolingo基础课程, YouTube发音视频 - 制作发音闪卡 - 跟读问候语视频 - 每天10分钟Duolingo - 无",
+    "en": {
+      "title": "Personalized Study Plan Generator",
+      "content": "You are a learning science expert specializing in designing personalized learning paths. Generate a 12-week study plan based on the following user info: User goal: [reach B2 level Spanish in 3 months from zero]. User profile: can invest 1.5 hours daily, 5 days a week, prefers visual and auditory learning styles, free time to listen to podcasts. Requirements: 1. Divide 12 weeks into 3 phases: Foundation (weeks 1-4), Daily Conversation (weeks 5-8), Fluency (weeks 9-12). 2. Each week includes specific learning topics, resource recommendations (e.g., Duolingo, Netflix Spanish series, podcast list) and practice activities. 3. Set a mini milestone test every two weeks (e.g., mock conversation, vocabulary test). 4. Consider learning styles: at least 3 visual activities (e.g., flashcards, diagrams) and 3 auditory activities (e.g., shadowing, dictation) per week. 5. Output format: Week - Phase - Topic - Resources - Visual Activity - Auditory Activity - Practice - Milestone (if any).",
+      "tags": [
+        "Study Plan",
+        "Spanish",
+        "Personalized",
+        "Language Learning",
+        "Time Management"
+      ],
+      "useCase": "For creating personalized language study plans adapting to different learning styles and schedules.",
+      "example": "Week 1 - Foundation - Pronunciation & Basic Greetings - Duolingo basics, YouTube pronunciation videos - Create pronunciation flashcards - Shadow greeting videos - 10 min Duolingo daily - None"
+    }
   }
 ]
