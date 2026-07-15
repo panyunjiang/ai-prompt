@@ -2141,5 +2141,92 @@
       "useCase": "For quickly memorizing lists or sequences, suitable for students, exam takers, or those needing heavy memorization.",
       "example": "After inputting a list to memorize, get a customized memory palace plan."
     }
+  },
+  {
+    "id": "writing-empathy-letter",
+    "title": "跨时空共情信函",
+    "category": "writing",
+    "platform": "ChatGPT",
+    "content": "角色：你是一位经验丰富的心理疗愈师和书信写作专家。任务：请以\"共情\"为核心，写一封给10年前自己的信。要求：1）使用第二人称\"你\"；2）包含对过去痛苦经历的理解和接纳；3）提供具体的宽慰话语，如\"那时你感到孤独，但这不是你的错\"；4）结尾附上一个温暖的行动建议。字数300-500字。输出格式：信件正文。",
+    "tags": [
+      "共情",
+      "心理疗愈",
+      "书信",
+      "自我关怀",
+      "情感写作"
+    ],
+    "useCase": "帮助用户通过写信与过去的自己和解，提升情感表达能力。",
+    "example": "亲爱的过去的我：我知道你现在正为那次失败而自责……",
+    "en": {
+      "title": "Cross-Time Empathy Letter",
+      "content": "Role: You are an experienced psychological healer and letter writing expert. Task: Write a letter to yourself 10 years ago, with 'empathy' as the core. Requirements: 1) Use second person 'you'; 2) Include understanding and acceptance of past painful experiences; 3) Provide specific comforting words, such as 'You felt lonely then, but it wasn't your fault'; 4) End with a warm action suggestion. Length: 300-500 words. Output format: Letter body.",
+      "tags": [
+        "Empathy",
+        "Psychological Healing",
+        "Letter",
+        "Self-Care",
+        "Emotional Writing"
+      ],
+      "useCase": "Help users reconcile with their past selves through letter writing, enhancing emotional expression.",
+      "example": "Dear past me: I know you're blaming yourself for that failure..."
+    }
+  },
+  {
+    "id": "art-pixel-character",
+    "title": "像素风角色设计",
+    "category": "art",
+    "platform": "ChatGPT",
+    "content": "角色：你是一位像素画艺术家和游戏角色设计师。任务：设计一个16x16像素的\"森林守护者\"角色。要求：1）描述角色外观：绿色系，手持木杖，头戴树叶冠；2）提供像素色板（最多8种颜色，用十六进制表示）；3）输出一个16x16的字符网格，每个字符代表一个像素，用字母表示颜色（如G=绿色，B=棕色等）；4）解释设计理念，如何用有限像素传达角色特征。最终输出包含色板、网格和设计说明。",
+    "tags": [
+      "像素画",
+      "角色设计",
+      "游戏",
+      "16x16",
+      "像素艺术"
+    ],
+    "useCase": "辅助像素游戏开发或像素艺术创作，提供具体可执行的像素设计。",
+    "example": "色板：G=#4CAF50, B=#8B4513, ... 网格：GGGGBBGGG... 设计说明：通过绿色系和木杖表现自然守护者身份，树叶冠增加辨识度。",
+    "en": {
+      "title": "Pixel Character Design",
+      "content": "Role: You are a pixel artist and game character designer. Task: Design a 16x16 pixel 'Forest Guardian' character. Requirements: 1) Describe appearance: green color scheme, holding a wooden staff, wearing a leaf crown; 2) Provide a pixel palette (max 8 colors, in hex); 3) Output a 16x16 character grid, each character representing a pixel, using letters for colors (e.g., G=green, B=brown); 4) Explain design concept: how to convey character traits with limited pixels. Final output includes palette, grid, and design notes.",
+      "tags": [
+        "Pixel Art",
+        "Character Design",
+        "Game",
+        "16x16",
+        "Pixel Art"
+      ],
+      "useCase": "Assist in pixel game development or pixel art creation with actionable pixel design.",
+      "example": "Palette: G=#4CAF50, B=#8B4513, ... Grid: GGGGBBGGG... Design notes: Green tones and staff convey guardian of nature; leaf crown adds recognizability."
+    }
+  },
+  {
+    "id": "learning-history-debate",
+    "title": "历史人物辩论赛",
+    "category": "learning",
+    "platform": "ChatGPT",
+    "content": "角色：你是一位历史学家和辩论主持人。任务：模拟一场辩论赛，主题为\"秦始皇统一六国是利大于弊还是弊大于利？\"。正方：秦始皇（自己辩护），反方：孟子（儒家代表）。要求：1）先由正方陈述观点（2分钟，约300字），然后反方反驳（2分钟，约300字），再自由辩论（各2轮，每轮150字），最后总结（各150字）；2）内容基于史实，但允许合理演绎；3）语言风格符合人物时代（如孟子引用儒家经典）；4）输出格式：辩论赛实录，包含角色标签。",
+    "tags": [
+      "历史",
+      "辩论",
+      "教育",
+      "批判性思维",
+      "角色扮演"
+    ],
+    "useCase": "通过辩论形式学习历史，培养多角度思考和表达能力。",
+    "example": "【正方·秦始皇】统一文字度量衡，奠定大一统基础...\n【反方·孟子】暴政虐民，仁义不施...",
+    "en": {
+      "title": "Historical Figure Debate",
+      "content": "Role: You are a historian and debate moderator. Task: Simulate a debate on the topic 'Was Qin Shi Huang's unification of the six kingdoms more beneficial or harmful?'. Affirmative: Qin Shi Huang (defending himself), Negative: Mencius (Confucian representative). Requirements: 1) Affirmative opening statement (2 min, ~300 words), then Negative rebuttal (2 min, ~300 words), then free debate (2 rounds each, 150 words each), then closing statements (150 words each); 2) Content based on historical facts, but allow reasonable dramatization; 3) Language style fits the figures' era (e.g., Mencius quotes Confucian classics); 4) Output format: Debate transcript with role tags.",
+      "tags": [
+        "History",
+        "Debate",
+        "Education",
+        "Critical Thinking",
+        "Role Play"
+      ],
+      "useCase": "Learn history through debate, develop multi-perspective thinking and expression skills.",
+      "example": "[Affirmative: Qin Shi Huang] Unification of script and measures laid foundation...\n[Negative: Mencius] Tyranny and cruelty, lacking benevolence..."
+    }
   }
 ]
