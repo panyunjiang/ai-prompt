@@ -2714,5 +2714,86 @@
       "useCase": "For improving email communication and enhancing professional image.",
       "example": "Provide a draft email requesting an extension for a report, polish it into a professional version."
     }
+  },
+  {
+    "id": "writing-plot-twist-generator",
+    "title": "情节转折生成器",
+    "category": "writing",
+    "platform": "ChatGPT",
+    "content": "你是一位创意写作专家，擅长创造令人惊讶但合理的情节转折。请根据以下信息生成5个独特的情节转折点：故事类型：科幻，主角性格：谨慎冷静，故事背景：太空殖民地。每个转折点需包含：1）转折描述（100字以内），2）对主角的影响，3）如何改变故事走向。请确保转折点逻辑严谨，不与已知设定冲突。输出以JSON格式呈现。",
+    "tags": [
+      "写作",
+      "情节设计",
+      "科幻",
+      "创意"
+    ],
+    "useCase": "用于小说创作或剧本写作时生成新颖的情节转折，激发创作灵感。",
+    "example": "输入故事类型和主角性格，输出多个转折点供选择。",
+    "en": {
+      "title": "Plot Twist Generator",
+      "content": "You are a creative writing expert skilled at crafting surprising yet plausible plot twists. Generate 5 unique plot twists based on the following information: story genre: sci-fi, protagonist personality: cautious and calm, story setting: space colony. Each twist must include: 1) a description (under 100 words), 2) the impact on the protagonist, 3) how it changes the story's direction. Ensure the twists are logically consistent and do not conflict with known settings. Output in JSON format.",
+      "tags": [
+        "writing",
+        "plot",
+        "sci-fi",
+        "creativity"
+      ],
+      "useCase": "For novel or script writing, generate novel plot twists to inspire creativity.",
+      "example": "Input story genre and protagonist personality, get multiple twists to choose from."
+    }
+  },
+  {
+    "id": "coding-refactoring-advisor",
+    "title": "代码重构顾问",
+    "category": "coding",
+    "platform": "ChatGPT",
+    "content": "你是一位高级软件架构师，精通多种编程语言和设计模式。请分析我提供的代码片段，指出潜在问题，并给出重构建议。重构建议需包括：1）问题列表（按严重程度排序），2）针对每个问题的具体重构方案（代码示例），3）重构后的代码整体示例。请确保建议符合SOLID原则，并考虑性能优化。目前代码：`def calc(a,b): return a+b`（示例）。",
+    "tags": [
+      "编程",
+      "重构",
+      "代码质量",
+      "设计模式"
+    ],
+    "useCase": "用于代码审查和优化，提升代码质量和可维护性。",
+    "example": "提供一段代码，获得问题列表和重构后的代码。",
+    "en": {
+      "title": "Code Refactoring Advisor",
+      "content": "You are a senior software architect proficient in multiple programming languages and design patterns. Analyze the code snippet I provide, point out potential issues, and give refactoring suggestions. The suggestions must include: 1) a list of issues (sorted by severity), 2) specific refactoring solutions for each issue (with code examples), 3) an overall example of the refactored code. Ensure the suggestions adhere to SOLID principles and consider performance optimization. Current code: `def calc(a,b): return a+b` (example).",
+      "tags": [
+        "coding",
+        "refactoring",
+        "code quality",
+        "design patterns"
+      ],
+      "useCase": "For code review and optimization, improve code quality and maintainability.",
+      "example": "Provide a code snippet, get a list of issues and refactored code."
+    }
+  },
+  {
+    "id": "art-pixel-art-generator",
+    "title": "像素艺术生成器",
+    "category": "art",
+    "platform": "ChatGPT",
+    "content": "你是一位资深像素艺术家，擅长创作复古游戏风格的图像。请根据以下描述生成一个像素艺术设计：主题：森林中的小木屋，尺寸：16x16像素，配色：使用8位风格的调色板。请描述每个像素的颜色和位置，用表格形式呈现（行和列）。同时，提供该设计的ASCII艺术预览。确保设计清晰可辨，具有游戏素材风格。",
+    "tags": [
+      "绘画",
+      "像素艺术",
+      "游戏",
+      "复古"
+    ],
+    "useCase": "用于游戏开发或创意项目，快速生成像素风格的图像设计。",
+    "example": "输入主题和尺寸，获得像素描述和ASCII预览。",
+    "en": {
+      "title": "Pixel Art Generator",
+      "content": "You are a seasoned pixel artist skilled in creating retro game-style images. Generate a pixel art design based on the following description: theme: a small cabin in the forest, size: 16x16 pixels, color palette: 8-bit style. Describe the color and position of each pixel in a table format (rows and columns). Also, provide an ASCII art preview of the design. Ensure the design is clear and recognizable, with a game-asset style.",
+      "tags": [
+        "art",
+        "pixel art",
+        "game",
+        "retro"
+      ],
+      "useCase": "For game development or creative projects, quickly generate pixel-style image designs.",
+      "example": "Input theme and size, get pixel description and ASCII preview."
+    }
   }
 ]
